@@ -1,0 +1,40 @@
+subject_domain_of_cyberattack_protection
+ <- sc_node_struct;;
+
+subject_domain_of_cyberattack_protection
+=> nrel_main_idtf:
+	[Предметная область защиты от кибератак] 
+	(* <- lang_ru;; *);
+	[Subject domain of cyberattack protection]	
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Предметная область, объектом исследования которой является защита от кибератак] 
+	(* <- lang_ru;; *);
+
+<- subject_domain;
+	
+=> nrel_private_subject_domain:	
+subject_domain_of_application_threats;
+subject_domain_of_application_security_vulnerabilities;
+
+-> rrel_not_maximum_studied_object_class:
+concept_ddos_protection;
+concept_incident_detection_mechanisms;
+concept_api_security;
+concept_log_monitoring;
+concept_application_whitelisting;
+concept_buffer_overflow_protection;
+concept_data_protection;
+concept_vulnerability_scanning;
+concept_access_revocation;
+concept_cross_site_scripting_protection;
+concept_perimeter_protection;
+concept_sql_injection_protection;
+concept_attack_protection;
+concept_testing_method;
+concept_threat;
+
+-> rrel_explored_relation:
+nrel_asset;
+
+-> rrel_maximum_studied_object_class: concept_attack_protection;;
