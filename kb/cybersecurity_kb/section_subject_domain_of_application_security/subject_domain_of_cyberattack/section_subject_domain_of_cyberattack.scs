@@ -1,0 +1,24 @@
+section_subject_domain_of_cyberattack <- sc_node_struct;;
+
+section_subject_domain_of_cyberattack
+=> nrel_main_idtf:
+	[Section. Subject domain of cyberattack]
+	(*<- lang_en;; *);
+	[Раздел. Предметная область кибератак]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Раздел ИИС по кибербезопасности, описывающий кибератаки]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+-> rrel_key_sc_element:
+concept_ddos_attack;
+concept_csrf_attack;
+concept_cross_site_scripting;
+concept_sql_injection;
+concept_threat;
+concept_buffer_overflow_attack;
+concept_session_attack;
+
+<- non_atomic_section;;

@@ -1,0 +1,44 @@
+subject_domain_of_application_security <- sc_node_struct;;
+
+subject_domain_of_application_security
+=> nrel_main_idtf:
+	[Предметная область безопасности приложений] 
+	(* <- lang_ru;; *);
+	[Subject domain of application security]	
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Предметная область, объектом исследования которой является безопасность приложений] 
+	(* <- lang_ru;; *);
+
+<- subject_domain;
+	
+=> nrel_private_subject_domain:
+subject_domain_of_application_security_testing;	
+subject_domain_of_application_threats;
+subject_domain_of_cyberattack_protection;
+subject_domain_of_cyberattack;
+subject_domain_of_application_security_vulnerabilities;
+
+<= nrel_private_subject_domain:
+subject_domain_of_cybersecurity;
+
+-> rrel_not_maximum_studied_object_class:
+concept_application;
+concept_cyberattack;
+concept_testing_method;
+concept_fault_tolerance;
+concept_access_rights;
+concept_application_security_policy;
+concept_cloud_application_security;
+concept_functional_safety;
+concept_information_security_audit;
+concept_security_event_management;
+concept_cryptography_algorithms;
+concept_threat;
+concept_storage_security;
+concept_web_server_security;
+
+-> rrel_explored_relation:
+nrel_asset;
+
+-> rrel_maximum_studied_object_class: concept_software;;

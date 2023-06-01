@@ -1,0 +1,25 @@
+section_subject_domain_of_application_development_security <- sc_node_struct;;
+
+section_subject_domain_of_application_development_security
+=> nrel_main_idtf:
+	[Section. Subject domain of application development security]
+	(*<- lang_en;; *);
+	[Раздел. Предметная область безопасности разработки приложений]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Раздел ИИС по кибербезопасности, описывающий безопасность разработки приложений]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+
+-> rrel_key_sc_element:
+concept_continuous_security_integration;
+concept_configuration_management;
+concept_continuous_security_verification;
+concept_reverse_engineering;
+concept_secure_code;
+concept_threat;
+concept_secure_sdlc;
+
+<- non_atomic_section;;
