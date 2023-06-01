@@ -1,0 +1,41 @@
+//Formalization for Cybersecurity concept
+
+
+concept_cybersecurity <- sc_node_class;
+
+
+	=> nrel_main_idtf: [cybersecurity]
+		(*
+			<- lang_en;;
+		*);
+    
+    => nrel_idtf: [computer security]
+		(*
+			<- lang_en;;
+		*);
+	
+	=> nrel_main_idtf: [кибербезопасность]
+		(*
+			<- lang_ru;;
+		*);
+    
+    => nrel_idtf: [компьютерная безопасность]
+		(*
+			<- lang_ru;;
+		*);
+	
+	<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Кибербезопасность] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Кибербезопасность -  раздел информационной безопасности, в рамках которого изучают процессы формирования, функционирования и эволюции киберобъектов, для выявления источников киберопасности, образующихся при этом, определение их характеристик, а также их классификацию и формирование нормативных документов, выполнение которых должно гарантировать защиту киберобъектов от всех выявленных и изученных источников киберопасности.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* 
+                <- concept_information_security;;				  
+			*);;
+	*);;	

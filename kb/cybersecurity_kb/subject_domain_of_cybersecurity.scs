@@ -1,0 +1,24 @@
+subject_domain_of_cybersecurity
+
+
+=> nrel_main_idtf: [Предметная область Кибербезопасности]
+	(*
+		<- lang_ru;;
+	*);
+
+=> nrel_main_idtf: [Subject domain of Cybersecurity]
+	(*
+		<- lang_en;;
+	*);
+
+<- subject_domain;
+
+=> nrel_private_subject_domain:
+    subject_domain_of_malware;	
+    subject_domain_of_application_security;
+    subject_domain_of_network_security;
+    subject_domain_of_operational_security;
+    subject_domain_of_information_security;
+
+-> rrel_maximum_studied_object_class:
+	concept_cybersecurity;;
