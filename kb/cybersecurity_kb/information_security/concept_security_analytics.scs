@@ -1,0 +1,30 @@
+// описание класса concept_security_analytics
+
+concept_security_analytics <- sc_node_class;;
+
+concept_security_analytics => nrel_main_idtf: [security_analytics]
+	(*
+		<-lang_en;;
+	*);;
+concept_security_analytics => nrel_main_idtf: [Аналитика безопасности]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_security_analytics
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Аналитика безопасности] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Аналитика безопасности (Security Analytics): Это технология, которая использует методы машинного обучения и искусственного интеллекта для анализа и обнаружения угроз безопасности. Она включает в себя сбор и анализ журналов аудита, мониторинг сетевого трафика и другие методы для обнаружения аномалий в системе.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- methods;incident;information;; *);;
+	*);;

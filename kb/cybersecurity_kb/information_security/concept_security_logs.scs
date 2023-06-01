@@ -1,0 +1,28 @@
+// описание класса concept_security_logs
+
+concept_security_logs <- sc_node_class;;
+
+concept_security_logs => nrel_main_idtf: [security_logs]
+	(*
+		<-lang_en;;
+	*);;
+concept_security_logs => nrel_main_idtf: [Логи безопасности]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+concept_security_logs
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Логи безопасности] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Логи безопасности (Security Logs) - это записи о действиях пользователей и событиях, которые происходят в компьютерной системе, их анализ помогает выявлять потенциальные угрозы безопасности.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- logs;action;users;; *);;
+	*);;

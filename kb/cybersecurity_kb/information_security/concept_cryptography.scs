@@ -1,0 +1,30 @@
+// описание класса Cryptography
+
+concept_cryptography <- sc_node_class;;
+
+concept_cryptography => nrel_main_idtf: [Cryptography]
+	(*
+		<-lang_en;;
+	*);;
+concept_cryptography => nrel_main_idtf: [Криптография]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_cryptography
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Криптография] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Криптография - это наука о шифровании и дешифровании информации, используемая для защиты конфиденциальности данных в сети.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- science;information;network;; *);;
+	*);;

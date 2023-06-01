@@ -1,0 +1,33 @@
+section_subject_domain_of_threats_to_information_security <- sc_node_struct;;
+
+section_subject_domain_of_threats_to_information_security
+
+=> nrel_main_idtf: [Раздел. Предметная область Угрозы Защиты Инфомации]
+	(*
+		<- lang_ru;;
+	*);
+
+=> nrel_main_idtf: [Section. Subject domain of Threats of Information security]
+	(*
+		<- lang_en;;
+	*);
+
+=> nrel_idtf: [Раздел ИИС по кибербезопасности, описывающий Угрозы Защиты Инфомации]
+	(*
+		<- lang_ru;;
+	*);
+
+<- not_enough_formed_structure;
+
+
+
+-> rrel_key_sc_element:
+	concept_social_engineering;
+    concept_phishing_attack;
+	concept_security_threats;
+	concept_security_incident;
+    concept_threat_intelligence;
+    concept_vulnerability;
+    
+
+<- non_atomic_section;;

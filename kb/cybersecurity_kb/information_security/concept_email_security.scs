@@ -1,0 +1,30 @@
+// описание класса concept_email_security
+
+concept_email_security <- sc_node_class;;
+
+concept_email_security => nrel_main_idtf: [email_security]
+	(*
+		<-lang_en;;
+	*);;
+concept_email_security => nrel_main_idtf: [Безопасность почты]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_email_security
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Безопасность почты] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Безопасность почты (Email Security): Это технология, которая обеспечивает защиту электронной почты от спама, вредоносных вложений и других угроз. Она включает в себя методы фильтрации спама, проверки на вирусы и другие методы для обеспечения безопасности электронной почты.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- mail;spam;access;; *);;
+	*);;

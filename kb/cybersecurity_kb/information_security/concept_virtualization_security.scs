@@ -1,0 +1,30 @@
+// описание класса concept_virtualization_security
+
+concept_virtualization_security <- sc_node_class;;
+
+concept_virtualization_security => nrel_main_idtf: [virtualization_security]
+	(*
+		<-lang_en;;
+	*);;
+concept_virtualization_security => nrel_main_idtf: [Безопасность виртуальных сред]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_virtualization_security
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. ИБезопасность виртуальных сред] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Безопасность виртуальных сред (Virtualization Security): Это технология, которая обеспечивает безопасность виртуальных сред, таких как виртуальные машины и контейнеры. Она включает в себя управление доступом к виртуальным ресурсам, изоляцию виртуальных сред, обнаружение и предотвращение угроз в виртуальной среде.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- safety;sources;access;; *);;
+	*);;

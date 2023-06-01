@@ -1,0 +1,30 @@
+
+// описание класса concept_сommunication_channel
+
+concept_communication_channel <- sc_node_class;;
+
+concept_communication_channel => nrel_main_idtf: [communication_channel]
+	(*
+		<-lang_en;;
+	*);;
+concept_communication_channel => nrel_main_idtf: [Канал связи]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_communication_channel
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Канал связи] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Канал связи: это физический или логический канал передачи данных между устройствами, который должен быть защищен от несанкционированного доступа и интерсепции.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- channel;data;access;; *);;
+	*);;

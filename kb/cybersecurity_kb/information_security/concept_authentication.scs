@@ -1,0 +1,30 @@
+// описание класса Аутентификация
+
+concept_authentication <- sc_node_class;;
+
+concept_authentication => nrel_main_idtf: [Authentication]
+	(*
+		<-lang_en;;
+	*);;
+concept_authentication => nrel_main_idtf: [Аутентификация]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_authentication
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Аутентификация] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Аутентификация - это процесс проверки подлинности пользователя, путем предоставления учетных данных или использования биометрических характеристик.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- process;user;specification;information;; *);;
+	*);;

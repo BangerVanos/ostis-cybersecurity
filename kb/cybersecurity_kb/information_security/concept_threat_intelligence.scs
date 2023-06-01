@@ -1,0 +1,30 @@
+// описание класса concept_threat_intelligence
+
+concept_threat_intelligence <- sc_node_class;;
+
+concept_threat_intelligence => nrel_main_idtf: [threat_intelligence]
+	(*
+		<-lang_en;;
+	*);;
+concept_threat_intelligence => nrel_main_idtf: [Разведка угроз]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_threat_intelligence
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Разведка угроз] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Разведка угроз (Threat Intelligence) - это метод анализа информации о возможных киберугрозах и использования этой информации для разработки методов защиты.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- method;information;protection;; *);;
+	*);;

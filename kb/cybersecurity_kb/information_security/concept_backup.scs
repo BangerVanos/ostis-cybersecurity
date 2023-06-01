@@ -1,0 +1,30 @@
+// описание класса Backup
+
+concept_backup <- sc_node_class;;
+
+concept_backup => nrel_main_idtf: [backup]
+	(*
+		<-lang_en;;
+	*);;
+concept_backup => nrel_main_idtf: [Бэкап]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_backup
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Бэкап] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Бэкап - это копирование данных с целью их сохранения и восстановления в случае потери или повреждения.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- information;; *);;
+	*);;

@@ -1,0 +1,30 @@
+// описание класса concept_quantum_authentication
+
+concept_quantum_authentication <- sc_node_class;;
+
+concept_quantum_authentication => nrel_main_idtf: [quantum_authentication]
+	(*
+		<-lang_en;;
+	*);;
+concept_quantum_authentication => nrel_main_idtf: [Квантовая аутентификация]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_quantum_authentication
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Квантовая аутентификация] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Квантовая аутентификация (Quantum Authentication): Технология, которая использует квантовую механику для обеспечения безопасности аутентификации пользователей и защиты от атак с подменой данных.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- authentication;users;technology;; *);;
+	*);;

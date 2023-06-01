@@ -1,0 +1,31 @@
+// описание класса concept_microsegmentation
+
+concept_microsegmentation <- sc_node_class;;
+
+concept_microsegmentation => nrel_main_idtf: [microsegmentation]
+	(*
+		<-lang_en;;
+	*);;
+concept_microsegmentation => nrel_main_idtf: [Микросегментация]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_microsegmentation
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Микросегментация] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Микросегментация - это технология безопасности информации, которая позволяет дополнительно защитить сеть от внешних и внутренних угроз путем разбиения ее на меньшие сегменты. Каждый сегмент может быть отдельно настроен и ограничен доступом только к необходимым ресурсам, что позволяет уменьшить поверхность атаки и улучшить общий уровень безопасности информации.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- technology;safety;protection;; *);;
+	*);;
+

@@ -1,0 +1,30 @@
+// описание класса IDS/IPS
+
+concept_ids_ips <- sc_node_class;;
+
+concept_ids_ips => nrel_main_idtf: [IDS IPS]
+	(*
+		<-lang_en;;
+	*);;
+concept_ids_ips => nrel_main_idtf: [IDS/IPS]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_ids_ips
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. IDS/IPS] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [IDS/IPS: это системы обнаружения и предотвращения вторжений, которые используются для мониторинга сетевого трафика и обнаружения несанкционированных попыток доступа к компьютерной системе.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- system;invasion;access;; *);;
+	*);;

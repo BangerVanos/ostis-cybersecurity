@@ -1,0 +1,29 @@
+// описание класса concept_noise_based_security
+
+concept_noise_based_security <- sc_node_class;;
+
+concept_noise_based_security => nrel_main_idtf: [noise_based_security]
+	(*
+		<-lang_en;;
+	*);;
+concept_noise_based_security => nrel_main_idtf: [Шумовая защита]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_noise_based_security
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Шумовая защита] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Шумовая защита (Noise-based security) - это метод защиты информации путем добавления случайного шума в передачу данных, что затрудняет их перехват и дешифровку.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- methods;protection;system;; *);;
+	*);;

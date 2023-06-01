@@ -1,0 +1,30 @@
+// описание класса concept_methods_of_analysis
+
+concept_methods_of_analysis <- sc_node_class;;
+
+concept_methods_of_analysis => nrel_main_idtf: [methods_of_analysis]
+	(*
+		<-lang_en;;
+	*);;
+concept_methods_of_analysis => nrel_main_idtf: [Методы анализа]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_methods_of_analysis
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Методы анализа] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Методы анализа это: приемы, способы и средства, которые применяются для разбора и оценки явлений, объектов]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- way;techniques;; *);;
+	*);;

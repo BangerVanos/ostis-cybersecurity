@@ -1,0 +1,30 @@
+// описание класса concept_system_monitoring
+
+concept_system_monitoring <- sc_node_class;;
+
+concept_system_monitoring => nrel_main_idtf: [system_monitoring]
+	(*
+		<-lang_en;;
+	*);;
+concept_system_monitoring => nrel_main_idtf: [Мониторинг системы]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_system_monitoring
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Мониторинг системы] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Мониторинг системы (System Monitoring): Технология, которая обеспечивает постоянный мониторинг системы на наличие угроз и несанкционированного доступа.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- system;malware;monitoring;; *);;
+	*);;

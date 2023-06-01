@@ -1,0 +1,30 @@
+// описание класса concept_secure_file_transfer
+
+concept_secure_file_transfer <- sc_node_class;;
+
+concept_secure_file_transfer => nrel_main_idtf: [secure_file_transfer]
+	(*
+		<-lang_en;;
+	*);;
+concept_secure_file_transfer => nrel_main_idtf: [Безопасный обмен файлами]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_secure_file_transfer
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Безопасный обмен файлами] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Безопасный обмен файлами (Secure File Transfer): Технология, которая обеспечивает безопасный обмен файлами между пользователями и устройствами.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- safety;files;technology;; *);;
+	*);;

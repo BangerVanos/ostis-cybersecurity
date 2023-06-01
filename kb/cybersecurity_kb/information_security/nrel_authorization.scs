@@ -1,0 +1,52 @@
+
+
+
+nrel_authorization <- sc_node_norole_relation;
+
+<- binary_relation;
+<- antireflexive_relation;
+<- oriented_relation;
+<- asymmetric_relation;
+<- antitransitive_relation;
+
+=> nrel_main_idtf: [авторизация*]
+	(*
+		<- lang_ru;;
+	*);
+
+=> nrel_main_idtf: [authorization*]
+	(*
+		<- lang_en;;
+	*);
+
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. авторизация*] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [авторизация* - бинарное отношения, связывающее пользователя и аудентификацию]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(*
+				<- concept_user;;
+			*);;
+	*);;
+
+..node
+<- arity;
+=> nrel_measurement: 2 (* <- number;; *);;
+
+nrel_authorization
+=> nrel_first_domain: concept_user;
+=> nrel_second_domain: concept_authentication;
+=> nrel_definition_domain:
+	...
+	(*
+		<= nrel_union: {
+			concept_user;
+			concept_authentication
+		};;
+	*);;

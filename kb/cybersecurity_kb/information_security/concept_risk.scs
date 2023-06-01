@@ -1,0 +1,30 @@
+// описание класса concept_risk
+
+concept_risk <- sc_node_class;;
+
+concept_risk => nrel_main_idtf: [concept_risk]
+	(*
+		<-lang_en;;
+	*);;
+concept_risk => nrel_main_idtf: [Риск]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_risk
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Риск] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Риск - это сочетание частоты (или вероятности) и последствий определенного опасного события]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- event;possibility;; *);;
+	*);;

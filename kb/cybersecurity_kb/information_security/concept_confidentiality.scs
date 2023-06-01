@@ -1,0 +1,30 @@
+// описание класса Confidentiality
+
+concept_confidentiality <- sc_node_class;;
+
+concept_confidentiality => nrel_main_idtf: [Confidentiality]
+	(*
+		<-lang_en;;
+	*);;
+concept_confidentiality => nrel_main_idtf: [Конфиденциальность]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_confidentiality
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Конфиденциальность] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Конфиденциальность - это свойство информации, которое означает, что только авторизованные пользователи имеют доступ к конфиденциальной информации.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- access;users;information;; *);;
+	*);;

@@ -1,0 +1,30 @@
+subject_domain_of_information_security
+
+
+=> nrel_main_idtf: [Предметная область Безопасность информации]
+	(*
+		<- lang_ru;;
+	*);
+
+=> nrel_main_idtf: [Subject domain of Information security]
+	(*
+		<- lang_en;;
+	*);
+
+<- subject_domain;
+
+=> nrel_private_subject_domain:
+ 	subject_domain_of_information_security;
+
+<= nrel_private_subject_domain:
+   subject_domain_of_cybersecurity;
+
+-> rrel_not_maximum_studied_object_class:
+    concept_certification;
+	concept_quantum_encryption;
+
+-> rrel_maximum_studied_object_class:
+   concept_methods_of_analysis;
+   concept_risk;
+   concept_information_security;;
+

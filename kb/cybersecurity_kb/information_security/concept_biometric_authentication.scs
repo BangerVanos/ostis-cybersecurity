@@ -1,0 +1,52 @@
+// описание класса Biometrics
+
+concept_biometric_authentication <- sc_node_class;;
+
+concept_biometric_authentication => nrel_main_idtf: [biometric_authentication]
+	(*
+		<-lang_en;;
+	*);;
+concept_biometric_authentication => nrel_main_idtf: [Биометрическая аутентификация]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_biometric_authentication
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Биометрическая аутентификация] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Биометрическая аутентификация - метод проверки личности путем сбора и сравнения физиологических или поведенческих данных.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- date;authentication;; *);;
+	*);;
+
+
+// sc_statement <- sc_node_class;;
+concept_system <- sc_node_class;;
+concept_method <- sc_node_class;;
+concept_user <- sc_node_class;;
+
+
+concept_biometric_authentication
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.1 Биометрическая аутентификация] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Биометрическая аутентификация самый надежный метод аутентификации пользователя в системе]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- concept_system; concept_method; concept_user;; *);;
+	*);;

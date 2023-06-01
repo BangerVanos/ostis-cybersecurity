@@ -1,0 +1,30 @@
+// описание класса concept_data_leak_prevention
+
+concept_data_leak_prevention <- sc_node_class;;
+
+concept_data_leak_prevention => nrel_main_idtf: [data_leak_prevention]
+	(*
+		<-lang_en;;
+	*);;
+concept_data_leak_prevention => nrel_main_idtf: [Защита от утечек данных]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_data_leak_prevention
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Защита от утечек данных ] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Защита от утечек данных (Data Leak Prevention): Технология, которая обеспечивает защиту конфиденциальных данных от несанкционированного раскрытия или утечки.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- protection;leak;technology;; *);;
+	*);;

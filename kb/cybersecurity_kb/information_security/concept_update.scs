@@ -1,0 +1,30 @@
+// описание класса concept_update
+
+concept_update <- sc_node_class;;
+
+concept_update => nrel_main_idtf: [Update]
+	(*
+		<-lang_en;;
+	*);;
+concept_update => nrel_main_idtf: [Обновление]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_update
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Обновление] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Обновление (Update) - это обновление программного обеспечения или системы, которое содержит исправления ошибок и уязвимостей безопасности.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- system;error;access;; *);;
+	*);;

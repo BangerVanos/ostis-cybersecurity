@@ -1,0 +1,28 @@
+// описание класса concept_security_threats
+
+concept_security_threats <- sc_node_class;;
+
+concept_security_threats => nrel_main_idtf: [security_threats]
+	(*
+		<-lang_en;;
+	*);;
+concept_security_threats => nrel_main_idtf: [Угрозы безопасности]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+concept_security_threats
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Угрозы безопасности] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Угрозы безопасности: это потенциальные угрозы, которые могут привести к нарушению безопасности системы, такие как вирусы, взломы, кражи данных и др.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- threats;system;information;; *);;
+	*);;

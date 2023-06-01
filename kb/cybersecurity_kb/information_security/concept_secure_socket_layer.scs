@@ -1,0 +1,30 @@
+// описание класса concept_secure_socket_layer
+
+concept_secure_socket_layer <- sc_node_class;;
+
+concept_secure_socket_layer => nrel_main_idtf: [secure_socket_layer]
+	(*
+		<-lang_en;;
+	*);;
+concept_secure_socket_layer => nrel_main_idtf: [SSL]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_secure_socket_layer
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. SSL] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [SSL - это криптографический протокол, который используется для защиты передачи конфиденциальных данных между веб-сайтом и пользователем в Интернете, путем шифрования информации.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- crypto;protection;information;; *);;
+	*);;

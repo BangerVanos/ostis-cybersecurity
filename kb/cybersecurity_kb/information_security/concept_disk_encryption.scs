@@ -1,0 +1,30 @@
+// описание класса disk_encryption
+
+concept_disk_encryption <- sc_node_class;;
+
+concept_disk_encryption => nrel_main_idtf: [Disk encryption]
+	(*
+		<-lang_en;;
+	*);;
+concept_disk_encryption => nrel_main_idtf: [Шифрование дисков]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_disk_encryption
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Шифрование дисков] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Шифрование дисков: это процесс защиты данных путем шифрования содержимого жесткого диска, чтобы предотвратить несанкционированный доступ к конфиденциальной информации.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- process;protection;encryption;; *);;
+	*);;

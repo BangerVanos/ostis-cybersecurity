@@ -1,0 +1,31 @@
+
+// описание класса concept_blockchain_security
+
+concept_blockchain_security <- sc_node_class;;
+
+concept_blockchain_security => nrel_main_idtf: [blockchain_security]
+	(*
+		<-lang_en;;
+	*);;
+concept_blockchain_security => nrel_main_idtf: [Безопасность блокчейна]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_blockchain_security
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Безопасность блокчейна] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Безопасность блокчейна (Blockchain Security): Это технология, которая обеспечивает безопасность блокчейн-систем путем защиты от взлома и других угроз. Она включает в себя методы проверки смарт-контрактов на уязвимости, контроля доступа к блокчейн-системам и другие методы для обеспечения безопасности блокчейна.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- protection;process;blockchain;; *);;
+	*);;

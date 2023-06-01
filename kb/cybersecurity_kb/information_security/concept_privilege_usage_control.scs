@@ -1,0 +1,30 @@
+// описание класса concept_privilege_usage_control
+
+concept_privilege_usage_control <- sc_node_class;;
+
+concept_privilege_usage_control => nrel_main_idtf: [privilege_usage_control]
+	(*
+		<-lang_en;;
+	*);;
+concept_privilege_usage_control => nrel_main_idtf: [Контроль использования привилегий]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_privilege_usage_control
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Контроль использования привилегий] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Контроль использования привилегий (Privilege Usage Control): Технология, которая обеспечивает контроль использования привилегий пользователями в информационной системе.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- system;control;technology;; *);;
+	*);;

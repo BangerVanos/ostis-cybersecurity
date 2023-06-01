@@ -1,0 +1,30 @@
+// описание класса concept_secure_data_wiping
+
+concept_secure_data_wiping <- sc_node_class;;
+
+concept_secure_data_wiping => nrel_main_idtf: [secure_data_wiping]
+	(*
+		<-lang_en;;
+	*);;
+concept_secure_data_wiping => nrel_main_idtf: [Безопасное удаление данных]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_secure_data_wiping
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Безопасное удаление данных] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Безопасное удаление данных (Secure Data Wiping) - это процесс удаления данных с устройства без возможности их восстановления.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- process;recover;remove;; *);;
+	*);;

@@ -1,0 +1,30 @@
+// описание класса user_identification
+
+concept_user_identification <- sc_node_class;;
+
+concept_user_identification => nrel_main_idtf: [User_identification]
+	(*
+		<-lang_en;;
+	*);;
+concept_user_identification => nrel_main_idtf: [Идентификация пользователя]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_user_identification
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Идентификация пользователя] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Идентификация пользователя: это процесс установления подлинности пользователя и предоставления ему доступа к защищенным ресурсам.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- process;user;access;; *);;
+	*);;

@@ -1,0 +1,30 @@
+// описание класса concept_cloud_security
+
+concept_cloud_securityv <- sc_node_class;;
+
+concept_cloud_security => nrel_main_idtf: [cloud_security]
+	(*
+		<-lang_en;;
+	*);;
+concept_cloud_security => nrel_main_idtf: [Безопасность облачных вычислений]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_cloud_security
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Безопасность облачных вычислений] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Безопасность облачных вычислений (Cloud Security): Это технология, которая обеспечивает безопасность в облачных средах. Она включает в себя методы аутентификации и авторизации, шифрование данных, мониторинг доступа и другие методы для обеспечения безопасности облачных вычислений.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- cloud;methods;information;; *);;
+	*);;

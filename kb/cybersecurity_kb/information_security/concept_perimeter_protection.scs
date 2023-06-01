@@ -1,0 +1,29 @@
+// описание класса Защита периметра
+
+concept_perimeter_protection <- sc_node_class;;
+
+concept_perimeter_protection => nrel_main_idtf: [perimeter_protection]
+	(*
+		<-lang_en;;
+	*);;
+concept_perimeter_protection => nrel_main_idtf: [Защита периметра]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_perimeter_protection
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Защита периметра] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Защита периметра -  это метод защиты компьютерных систем, который контролирует доступ к системе на границе с внешней средой, чтобы предотвратить несанкционированный доступ.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- methods;protection;system;; *);;
+	*);;

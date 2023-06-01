@@ -1,0 +1,29 @@
+// описание класса concept_intrusion_detection_system
+
+concept_intrusion_detection_system <- sc_node_class;;
+
+concept_intrusion_detection_system => nrel_main_idtf: [intrusion_detection_system]
+	(*
+		<-lang_en;;
+	*);;
+concept_intrusion_detection_system => nrel_main_idtf: [Система обнаружения вторжений]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_intrusion_detection_system
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Система обнаружения вторжений ] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Система обнаружения вторжений (Intrusion Detection System) - это программное обеспечение, которое автоматически обнаруживает попытки несанкционированного доступа к сети или системе.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- system;access;protection;; *);;
+	*);;

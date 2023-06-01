@@ -1,0 +1,30 @@
+// описание класса concept_two_factor_authentication
+
+concept_two_factor_authentication <- sc_node_class;;
+
+concept_two_factor_authentication => nrel_main_idtf: [two_factor_authentication]
+	(*
+		<-lang_en;;
+	*);;
+concept_two_factor_authentication => nrel_main_idtf: [Двухфакторная аутентификация]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_two_factor_authentication
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Двухфакторная аутентификация] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Двухфакторная аутентификация: это технология, которая обеспечивает дополнительный уровень безопасности при входе в системы и приложения, требуя не только пароль, но и дополнительный фактор, такой как код, отправленный на мобильный телефон.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- technology;code;phone;; *);;
+	*);;

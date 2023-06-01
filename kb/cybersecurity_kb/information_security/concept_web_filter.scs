@@ -1,0 +1,30 @@
+// описание класса concept_web_filter
+
+concept_web_filter <- sc_node_class;;
+
+concept_web_filter => nrel_main_idtf: [web_filter]
+	(*
+		<-lang_en;;
+	*);;
+concept_web_filter => nrel_main_idtf: [Веб-фильтр]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_web_filter
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Веб-фильтр] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Веб-фильтр (Web Filter) - это программа или аппаратное обеспечение, которое блокирует доступ к определенным веб-сайтам или категориям веб-сайтов для защиты от вредоносных или нежелательных контентов.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- program;access;content;; *);;
+	*);;

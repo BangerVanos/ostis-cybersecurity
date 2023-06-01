@@ -1,0 +1,30 @@
+// описание класса social_engineering
+
+concept_social_engineering <- sc_node_class;;
+
+concept_social_engineering => nrel_main_idtf: [Social_engineering]
+	(*
+		<-lang_en;;
+	*);;
+concept_social_engineering => nrel_main_idtf: [Социальная инженерия]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_social_engineering
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Социальная инженерия] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Социальная инженерия -  методы и тактика злонамеренного проникновения, при которой злоумышленник путём “уговоров” обманывает пользователей или администратора]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- methods;users;tactics;; *);;
+	*);;

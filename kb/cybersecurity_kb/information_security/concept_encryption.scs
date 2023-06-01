@@ -1,0 +1,52 @@
+//описываем класс Шифрование
+concept_encryption <- sc_node_class;;
+
+concept_encryption => nrel_main_idtf: [encryption]
+	(*
+		<-lang_en;;
+	*);;
+concept_encryption => nrel_main_idtf: [Шифрование]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_encryption
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Шифрование] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Шифрование - это процесс преобразования информации с использованием специального ключа, чтобы предотвратить ее несанкционированный доступ.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- information;key;access;; *);;
+	*);;
+
+
+
+sc_statement <- sc_node_class;;
+concept_information <- sc_node_class;;
+concept_algorithm <- sc_node_class;;
+concept_user <- sc_node_class;;
+
+
+concept_encryption
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.1 Шифрование] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Для защиты конфиденциальной информации необходимо использовать надежное шифрование, которое основано на математических алгоритмах и ключах, доступ к которым имеют только авторизованные пользователи]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- concept_information; concept_algorithm; concept_user;; *);;
+	*);;

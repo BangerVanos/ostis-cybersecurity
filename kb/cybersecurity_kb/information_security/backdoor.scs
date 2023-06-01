@@ -1,0 +1,30 @@
+
+// описание класса Бэкдор
+
+concept_backdoor <- sc_node_class;;
+
+concept_backdoor => nrel_main_idtf: [backdoor]
+	(*
+		<-lang_en;;
+	*);;
+concept_backdoor => nrel_main_idtf: [Бэкдор]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_backdoor
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Бэкдор] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Бэкдор - это скрытый путь в компьютерную систему, который позволяет злоумышленнику получить доступ к системе без необходимости проходить процедуры аутентификации и авторизации.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- path;system;access;; *);;
+	*);;

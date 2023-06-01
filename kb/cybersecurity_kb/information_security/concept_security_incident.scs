@@ -1,0 +1,30 @@
+// описание класса concept_security_incident
+
+concept_security_incident <- sc_node_class;;
+
+concept_security_incident => nrel_main_idtf: [security_incident]
+	(*
+		<-lang_en;;
+	*);;
+concept_security_incident => nrel_main_idtf: [Инцидент безопасности]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_security_incident
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Инцидент безопасности] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Инцидент безопасности: это событие, которое приводит к потенциальному или реальному нарушению безопасности информации.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- incident;information;; *);;
+	*);;

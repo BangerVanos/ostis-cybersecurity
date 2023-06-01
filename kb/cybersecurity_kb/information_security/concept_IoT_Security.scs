@@ -1,0 +1,29 @@
+// описание класса concept_IoT_Security
+
+concept_IoT_Security <- sc_node_class;;
+
+concept_IoT_Security => nrel_main_idtf: [IoT_Security]
+	(*
+		<-lang_en;;
+	*);;
+concept_IoT_Security => nrel_main_idtf: [Безопасность IoT]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_IoT_Security
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Безопасность IoT] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Безопасность IoT - это область, которая занимается защитой устройств Интернета вещей от угроз безопасности, таких как взлом, утечка данных и другие. Это включает в себя меры, такие как шифрование данных, аутентификация устройств и пользователей, управление доступом и мониторинг сетевой активности.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- encryption;process;protection;; *);;
+	*);;

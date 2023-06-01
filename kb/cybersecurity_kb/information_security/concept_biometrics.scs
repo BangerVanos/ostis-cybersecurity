@@ -1,0 +1,30 @@
+// описание класса Biometrics
+
+concept_biometrics <- sc_node_class;;
+
+concept_biometrics => nrel_main_idtf: [Biometrics]
+	(*
+		<-lang_en;;
+	*);;
+concept_biometrics => nrel_main_idtf: [Биометрия]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_biometrics
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Биометрия] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Биометрия - это наука, изучающая физические и поведенческие характеристики человека для их использования в идентификации и аутентификации.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- science;authentication;specifications;; *);;
+	*);;

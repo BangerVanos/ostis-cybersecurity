@@ -1,0 +1,31 @@
+
+// описание класса Integritet
+
+concept_integritet <- sc_node_class;;
+
+concept_integritet => nrel_main_idtf: [Integritet]
+	(*
+		<-lang_en;;
+	*);;
+concept_integritet => nrel_main_idtf: [Интегритет]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_integritet
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Интегритет] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Интегритет – это свойство информации, которое обеспечивает целостность и точность данных, защищает от несанкционированных изменений и повреждений]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- data;damage;information;; *);;
+	*);;

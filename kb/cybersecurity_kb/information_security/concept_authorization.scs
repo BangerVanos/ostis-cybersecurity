@@ -1,0 +1,30 @@
+// описание класса concept_authorization
+
+concept_authorization <- sc_node_class;;
+
+concept_authorization => nrel_main_idtf: [authorization]
+	(*
+		<-lang_en;;
+	*);;
+concept_authorization => nrel_main_idtf: [Авторизация]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_authorization
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Авторизация] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Авторизация (Authorization) - это процесс определения прав доступа пользователя к защищенным ресурсам, таким как файлы, приложения и т.д.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- process;user;files;; *);;
+	*);;

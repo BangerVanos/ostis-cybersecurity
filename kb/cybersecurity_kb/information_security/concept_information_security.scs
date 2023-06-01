@@ -1,0 +1,30 @@
+// описание класса Безопасность информации
+
+concept_information_security <- sc_node_class;;
+
+concept_information_security => nrel_main_idtf: [Information security]
+	(*
+		<-lang_en;;
+	*);;
+concept_information_security => nrel_main_idtf: [Безопасность информации]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_information_security
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Безопасность информации] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Безопасность информации - защита информации от несанкционированного доступа, использования, изменения, разглашения и уничтожения, обеспечивающая конфиденциальность, целостность и доступность.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- information;confidentiality;integrity;; *);;
+	*);;

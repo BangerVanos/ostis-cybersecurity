@@ -1,0 +1,29 @@
+// описание класса Журналирование
+
+concept_logging <- sc_node_class;;
+
+concept_logging => nrel_main_idtf: [Logging]
+	(*
+		<-lang_en;;
+	*);;
+concept_logging => nrel_main_idtf: [Журналирование]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+concept_logging
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. Журналирование] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [Журналирование - процесс записи и хранения всех действий пользователей для обеспечения безопасности информации.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- users;process;information;; *);;
+	*);;

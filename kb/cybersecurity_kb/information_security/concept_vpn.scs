@@ -1,0 +1,30 @@
+// описание класса concept_vpn
+
+concept_vpn <- sc_node_class;;
+
+concept_vpn => nrel_main_idtf: [Vpn]
+	(*
+		<-lang_en;;
+	*);;
+concept_vpn => nrel_main_idtf: [Vpn]
+	(*
+		<-lang_ru;;
+	*);;
+
+
+
+
+concept_vpn
+<- rrel_key_sc_element: ...
+	(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр. VPN] 
+			(* <- lang_ru;; *) ;;
+		<= nrel_sc_text_translation: ...
+			(*	
+				-> rrel_example: [VPN (Virtual Private Network): Это технология, которая позволяет создать безопасное соединение между двумя узлами через открытую сеть, такую как Интернет. VPN защищает данные, передаваемые между узлами, с помощью шифрования, что делает их недоступными для третьих лиц.]
+				(*<-lang_ru;;*);;
+			*);;
+		=> nrel_using_constants: ...
+			(* <- connection;protection;access;; *);;
+	*);;
