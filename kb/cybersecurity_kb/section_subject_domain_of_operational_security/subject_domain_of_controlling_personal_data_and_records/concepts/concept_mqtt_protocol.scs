@@ -1,0 +1,47 @@
+concept_mqtt_protocol
+<- sc_node_class;
+
+=> nrel_main_idtf: [MQTT протокол]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [MQTT protocol]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. MQTT протокол]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [MQTT – это основанный на стандартах протокол, или набор правил, обмена сообщениями, используемый для взаимодействия между компьютерами.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. MQTT]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [MQTT работает поверх протокола TCP/IP и отлично подходит для компьютеров раличных мощностей. ]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

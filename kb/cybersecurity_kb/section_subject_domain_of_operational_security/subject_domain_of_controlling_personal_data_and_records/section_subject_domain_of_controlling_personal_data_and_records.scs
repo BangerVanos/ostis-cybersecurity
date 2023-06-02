@@ -1,0 +1,39 @@
+section_subject_domain_of_controlling_personal_data_and_records <- sc_node_struct;;
+
+section_subject_domain_of_controlling_personal_data_and_records
+=> nrel_main_idtf:
+	[Section. Subject domain of controlling personal data and records]
+	(*<- lang_en;; *);
+	[Раздел. Предметная область защиты персональных данных и записей]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Подраздел ИИС по кибербезопасности, описывающий защиту персональных данных]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+/*<= nrel_section_decomposition:
+{
+section_subject_domain_of_access_control;
+section_subject_data_lifecycle_management;
+};*/
+=> nrel_private_subject_domain:
+section_subject_domain_of_access_control;
+section_subject_domain_of_lifecycle_management;
+
+-> rrel_key_sc_element:
+concept_cloud_security;
+concept_cloud_watch;
+concept_cognito;
+concept_iam;
+concept_iot_security;
+concept_jwt_access_token;
+concept_jwt_refresh_token;
+concept_logging;
+concept_mqtt_protocol;
+concept_operational_security_policy;
+concept_secure_sdlc;
+concept_token;
+subject_domain_of_operational_security;
+
+<- non_atomic_section;;

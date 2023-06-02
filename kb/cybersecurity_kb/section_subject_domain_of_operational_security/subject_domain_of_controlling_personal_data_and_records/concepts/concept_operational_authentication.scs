@@ -1,0 +1,47 @@
+concept_operational_authentification
+<- sc_node_class;
+
+=> nrel_main_idtf: [операционная аутентификация]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [opeartional authentification]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Операционная аутентификация]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Операционная аутентификация - это процесс, используемый для подтверждения личности пользователя, при обращении его к компьютерной системе или дополнительным системным ресурсам.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Операционная аутентификация]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [При работе с персональным компьютером операционная аутентификация в основном представлена в виде пароля.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

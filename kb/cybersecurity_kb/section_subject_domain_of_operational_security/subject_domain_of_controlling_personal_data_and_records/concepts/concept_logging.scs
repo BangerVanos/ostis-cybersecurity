@@ -1,0 +1,47 @@
+concept_logging
+<- sc_node_class;
+
+=> nrel_main_idtf: [логирование]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [logging]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Логирование]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Логирование – это способ мониторинга состояния приложения в режиме реального времени.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Логирование]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Логирование крайне эффективно для обнаружения ошибок или неисправностей. Такая практика зарекомендовала себя и используется многоми специалистами повсеместно.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

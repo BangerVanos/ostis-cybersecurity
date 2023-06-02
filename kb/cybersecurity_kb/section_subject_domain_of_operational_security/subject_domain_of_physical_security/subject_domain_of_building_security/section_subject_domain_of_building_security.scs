@@ -1,0 +1,22 @@
+section_subject_domain_of_building_security <- sc_node_struct;;
+
+section_subject_domain_of_building_security
+=> nrel_main_idtf:
+	[Subsection. Subject domain of building security]
+	(*<- lang_en;; *);
+	[Подраздел. Предметная область защиты помещений]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Подраздел ИИС по кибербезопасности, описывающий защиту помещений]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+
+-> rrel_key_sc_element:
+concept_alarm_systems;
+concept_anti_vandal_cases;
+concept_video_surveillance_cameras;
+subject_domain_of_operational_security;
+
+<- non_atomic_section;;

@@ -1,0 +1,44 @@
+nrel_operational_setup
+
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[операционная настройка*]
+	(*<- lang_ru;;*);
+	[operational setting up*]
+	(*<- lang_en;;*);
+
+<- binary_relation;
+<- oriented_relation;
+<|- symmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Операционная настройка]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Операционная настройка - бинарное отношение, связывающее одну из возможных технологий с другой технологией.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+
+..node
+<- arity;
+=> nrel_mesuarment: 2 (* <- number;; *);;
+
+nrel_operational_setup
+=> nrel_first_domain: concept_cognito;
+=> nrel_second_domain: concept_iam;
+=> nrel_definition_domain:
+	...
+	(*
+		<= nrel_union: {concept_iam; concept_cognito};;
+	*);;

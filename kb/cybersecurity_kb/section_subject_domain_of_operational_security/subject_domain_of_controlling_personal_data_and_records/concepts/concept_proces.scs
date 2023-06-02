@@ -1,0 +1,47 @@
+concept_proces
+<- sc_node_class;
+
+=> nrel_main_idtf: [процесс]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [proces]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Процесс]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Процесс – это экземпляр исполняющейся программы.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Процесс]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Процесс обладает собственным адресным пространством и собственными ресурсами, потому он более "тяжеловесный", чем поток.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

@@ -1,0 +1,47 @@
+concept_thread
+<- sc_node_class;
+
+=> nrel_main_idtf: [поток]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [thread]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Поток]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Поток – это облегченная версия процесса.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Поток]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Поток не имееет собственного адресного пространства и делит его с другими потоками в процессе.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

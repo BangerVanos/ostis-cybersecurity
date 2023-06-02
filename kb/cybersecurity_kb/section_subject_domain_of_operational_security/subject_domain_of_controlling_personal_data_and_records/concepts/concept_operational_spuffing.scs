@@ -1,0 +1,51 @@
+concept_operational_spoofing
+<- sc_node_class;
+
+=> nrel_main_idtf: [спуфинг]
+		(*
+		  <- lang_ru;;
+		*);
+=> nrel_main_idtf: [spoofing]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [обман при коммуникации]
+        (*
+          <- lang_ru;;  
+        *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Спуфинг]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Спуфинг — это вид киберпреступления, при котором злоумышленник имитирует известный контакт или организацию, чтобы обеспечить доверие жертвы.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Спуфинг]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Spoofing может также использоваться правообладателями для размещения искаженных версий своих работ в файлообменных сетях, чтобы препятствовать загрузке из этих источников.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

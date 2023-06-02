@@ -1,0 +1,47 @@
+concept_multithreading
+<- sc_node_class;
+
+=> nrel_main_idtf: [многопоточность]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [multithreading]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Многопоточность]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Многопоточность относится к возможности программы или системы одновременно выполнять несколько потоков или нитей исполнения.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Многопоточность]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Многопоточность является хорошим решением как для вычислительной нагрузки, так и для задач, связанных с вводом-выводом.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

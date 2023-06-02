@@ -1,0 +1,47 @@
+concept_alarm_systems
+<- sc_node_class;
+
+=> nrel_main_idtf: [тревожные системы]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [alarm systems]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Тревожные системы]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Тревожные системы – это оборудования для оповещения о несакционированном проникновении в здание.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Тревожные системы]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Тревожные системы зарекомендовали себя и используются повсеместно не только для охраны оборудования, они также используются во многих других сферах.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

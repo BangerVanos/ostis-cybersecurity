@@ -1,0 +1,47 @@
+concept_management_of_operational_security
+<- sc_node_class;
+
+=> nrel_main_idtf: [менеджмент операционной безопасности]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [management of operational security]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Менеджмент операционной безопасности]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Менеджемент операционной безопасности – это способ организации необходимой структуры операционной безопасности.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Менеджмент операционной безопасности]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Менеджмент позволяет эффективно справляться с различными вызовами, касающихся операционной безопасности. Менеджмент различный сфер является частой и хорошо зарекомендовавшей себя практикой.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

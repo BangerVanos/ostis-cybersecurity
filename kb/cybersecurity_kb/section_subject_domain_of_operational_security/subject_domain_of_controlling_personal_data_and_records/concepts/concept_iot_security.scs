@@ -1,0 +1,47 @@
+concept_iot_security
+<- sc_node_class;
+
+=> nrel_main_idtf: [безопасность в сфере IoT]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [Iot security]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Безопасность в IoT]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Безопасность в IoT – это способ организации безопасного взаимодействия устройств , приложений в IoT. Безопасность осуществляется с помощью протокола MQTT.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Безопасность в IoT]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Безопасность в IoT крайне важна, так как она подразумевает постоянное взаимодействие устройств между собой. ]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

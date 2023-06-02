@@ -1,0 +1,22 @@
+section_subject_domain_of_staff_security <- sc_node_struct;;
+
+section_subject_domain_of_staff_security
+=> nrel_main_idtf:
+	[Subsection. Subject domain of staff security]
+	(*<- lang_en;; *);
+	[Подраздел. Предметная область защиты персонала]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Подраздел ИИС по кибербезопасности, описывающий защиту персонала]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+
+-> rrel_key_sc_element:
+concept_biometric_passwords;
+concept_guard;
+subject_domain_of_operational_security;
+
+
+<- non_atomic_section;;

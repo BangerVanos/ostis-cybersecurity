@@ -1,0 +1,47 @@
+concept_cognito
+<- sc_node_class;
+
+=> nrel_main_idtf: [Cognito]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [AWS Cognito]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. AWS Cognito]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Cognito – способ многофакторной аунтефикации при помощи облачных сервисов.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. AWS Cognito]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [AWS Cognito значительно облегчает реализацию авторизации и аунтефикации в ПО, так как есть готовое и надежное решение. ]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

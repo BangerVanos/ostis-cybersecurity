@@ -1,0 +1,47 @@
+concept_cloud_security
+<- sc_node_class;
+
+=> nrel_main_idtf: [облачная безопасность]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [cloud security]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Облачная безопасность]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Облачная безопасность – это процесс корректной работы с быстрорастущими cloud-ресурсами.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Облачная безопасность]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Облачная безопасноть является одной из самых перспективных сфер, так как облачные решения становятся все более популярными.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
