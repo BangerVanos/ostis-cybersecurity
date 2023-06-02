@@ -1,0 +1,40 @@
+concept_defensive_operations <- sc_node_class;;
+concept_operation_system <- sc_node_class;;
+concept_defensive_operations
+<- sc_node_class;
+
+=> nrel_main_idtf: [защитные операции]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [defensive operations]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [защитные операции в операционных системах]
+		(*
+		  <- lang_ru;;
+		*);
+		[defensive operations in operational systems]
+		(*<- lang_en;;*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Защитные операции]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Защитные операции —  предотвращение атак на операционные системы.
+]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

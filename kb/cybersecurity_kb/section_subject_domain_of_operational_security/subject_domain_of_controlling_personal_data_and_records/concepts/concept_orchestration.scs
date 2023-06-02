@@ -1,0 +1,47 @@
+concept_orchestration
+<- sc_node_class;
+
+=> nrel_main_idtf: [оркестрация]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [orchestration]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Оркестрация]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Оркестрация — автоматическое размещение, координация и управление сложными компьютерными системами и службами.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Оркестрация]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Оркестрация описывает то, как сервисы должны взаимодействовать между собой, используя для этого обмен сообщениями, включая бизнес-логику и последовательность действий.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

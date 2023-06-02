@@ -1,0 +1,48 @@
+concept_two_factor_operational_authentification
+
+<- concept_two_factor_operational_authentification;
+<- sc_node_class;
+=> nrel_main_idtf: [двухфакторная операционная аунтефикация]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [two factor operational authentification]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Двухфакторная операционная аунтефикация]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Двухфакторная операционная аунтефикация - это расширенная проверка принадлежности аккаунта пользователю, включающая в себя два этапа проверки.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Двухфакторная операционная аунтефикация]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [На практике двухфакторная аутентификация обычно выглядит так: первый этап — это логин и пароль, второй — код, приходящий по SMS или электронной почте.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

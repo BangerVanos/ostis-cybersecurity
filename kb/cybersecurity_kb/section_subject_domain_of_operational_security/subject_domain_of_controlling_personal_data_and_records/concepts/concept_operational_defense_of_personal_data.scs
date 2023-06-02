@@ -1,0 +1,42 @@
+concept_hard_disk_encryption <- sc_node_class;;
+concept_instrument <- sc_node_class;;
+
+concept_hard_disk_encryption
+<- sc_node_class;
+
+=> nrel_main_idtf: [операционная защита персональных данных]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [operational security of personal data]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [защита персональных данных]
+		(*
+		  <- lang_ru;;
+		*);
+		[defense of personal data]
+		(*<- lang_en;;*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Операционная защита персональных данных]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Операционная защита персональных данных  —  Операционная защита персональных данных —  предотвращение атак на персональные данные в операционных системах.
+
+]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

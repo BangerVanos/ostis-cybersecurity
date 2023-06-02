@@ -1,0 +1,41 @@
+concept_hard_disk_encryption <- sc_node_class;;
+concept_instrument <- sc_node_class;;
+
+concept_hard_disk_encryption
+<- sc_node_class;
+
+=> nrel_main_idtf: [шифрование жесткого диска]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [hard disk encryption]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [шифрование диска]
+		(*
+		  <- lang_ru;;
+		*);
+		[disk encryption]
+		(*<- lang_en;;*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Шифрование жесткого диска]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Шифрование жесткого диска  —  инструмент защиты данных, который шифрует содержимое жесткого диска компьютера и делает файлы нечитаемыми для неавторизованных пользователей.
+]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

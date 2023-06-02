@@ -1,0 +1,47 @@
+concept_multiprocessing
+<- sc_node_class;
+
+=> nrel_main_idtf: [многопроцессорность]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [multiprocessing]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Многопроцессорность]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Многопроцессорность – возможность компьютерной системы одновременно выполнять несколько задач или инструкций на нескольких процессорах или ядрах процессора.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Многопроцессорность]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Многопроцессорность отлично подходит для выполнения вычислительных задач. ]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

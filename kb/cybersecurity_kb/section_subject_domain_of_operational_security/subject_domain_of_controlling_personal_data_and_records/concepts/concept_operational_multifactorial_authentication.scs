@@ -1,0 +1,48 @@
+concept_operational_multifactorial_authentication
+<- sc_node_class;
+<- concept_opeational_authentification;
+
+=> nrel_main_idtf: [операционная многофакторная аутентификация]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [operational multifactorial authentication]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Операционная многофакторная аутентификация]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Операционная многофакторная аутентификация — это расширенная проверка принадлежности аккаунта пользователю, включающая в себя более одного фактора.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Операционная многофакторная аутентификация]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Разные площадки поддерживают различные типы многофакторной аутентификации. Как правило, авторизовавшись в учётной записи, их можно выбрать и настроить во вкладке «Безопасность».]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

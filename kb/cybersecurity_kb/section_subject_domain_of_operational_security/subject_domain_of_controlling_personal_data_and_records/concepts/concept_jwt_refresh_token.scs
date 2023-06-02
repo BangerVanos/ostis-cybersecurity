@@ -1,0 +1,47 @@
+concept_jwt_refresh_token
+<- sc_node_class;
+
+=> nrel_main_idtf: [jwt refresh token]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [refresh token]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Refresh token]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Refresh token – это токен, который используется для обновления пары access и refresh токенов.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Refresh token]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [У jwt refresh токена есть два свойства, обратные первому токену: он одноразовый и долгоживущий.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

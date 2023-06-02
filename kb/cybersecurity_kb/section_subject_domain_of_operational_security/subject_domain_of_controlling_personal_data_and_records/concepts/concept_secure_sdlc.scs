@@ -1,0 +1,47 @@
+concept_secure_sdlc
+<- sc_node_class;
+
+=> nrel_main_idtf: [SDLC]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [secure software development life cycle]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Secure SDLC]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Secure SDLC – это  методология разработки программного обеспечения, которая включает безопасность с самого начала процесса разработки и обеспечивает идентификацию и исправление уязвимостей на ранних этапах разработки..]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Secure SDLC]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Процесс жизненного цикла приложение включает в себя 7 стадий: анализ, составление требований к продукту, планирование, проектировка и дизайн, разработка, тестирование, развертывание, эксплуатация. ]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

@@ -1,0 +1,47 @@
+concept_guard
+<- sc_node_class;
+
+=> nrel_main_idtf: [охрана]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [guard]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Охрана]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Охрана – персонал, целью которого является защита операционного оборудования, персонала и помещений от внешних угроз]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Охрана]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Охрана крайне эффективно справляется с внешними угрозами]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

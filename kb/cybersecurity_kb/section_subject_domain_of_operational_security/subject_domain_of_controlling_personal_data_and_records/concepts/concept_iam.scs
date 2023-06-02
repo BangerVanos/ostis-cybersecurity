@@ -1,0 +1,47 @@
+concept_iam
+<- sc_node_class;
+
+=> nrel_main_idtf: [IAM]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [Identify and access management]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. IAM]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [IAM – это инструмент, который обеспечивает точный контроль доступа во всех сервисах AWS. С помощью IAM вы можете управлять доступом к сервисам и ресурсам в определенных условиях..]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. IAM]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [принцип работы IAM используется во многих облачных сервисах, таких как Amazon, Azure. ]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

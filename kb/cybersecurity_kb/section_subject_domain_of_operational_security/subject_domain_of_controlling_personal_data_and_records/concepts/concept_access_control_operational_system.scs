@@ -1,0 +1,40 @@
+concept_access_control_operational_system <- sc_node_class;;
+concept_operation_system <- sc_node_class;;
+concept_access_control_operational_system
+<- sc_node_class;
+
+=> nrel_main_idtf: [контроль доступа в операционных системах]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [access control operational systems]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [доступ в операционных системах]
+		(*
+		  <- lang_ru;;
+		*);
+		[access in operational systems]
+		(*<- lang_en;;*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Контроль доступа в операционных системах]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Контроль доступа в операционных системах — согласование ролей пользователей и их прав в операционных системах.
+]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

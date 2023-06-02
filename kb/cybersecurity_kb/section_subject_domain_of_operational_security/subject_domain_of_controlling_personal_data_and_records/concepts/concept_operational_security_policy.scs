@@ -1,0 +1,47 @@
+concept_operational_security_policy
+<- sc_node_class;
+
+=> nrel_main_idtf: [политика безопасности]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [security policy]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Политика операционной безопасности]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Политика операционной безопасности – это набор установленный мер для опеределения степени угроз и их предотвращения.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Политика операционной безопасности]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Политика операционной безопасности необходима для каждой организации, так как различные сферы и их потенциальные угрозы требуют отдельной спецификации.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

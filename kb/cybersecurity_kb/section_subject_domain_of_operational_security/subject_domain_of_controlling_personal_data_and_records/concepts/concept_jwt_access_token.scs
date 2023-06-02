@@ -1,0 +1,47 @@
+concept_jwt_access_token
+<- sc_node_class;
+
+=> nrel_main_idtf: [jwt access token]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [access token]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Access Token]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Access Token – это токен, который используется при запросах к серверу (например, при логине).]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Access Token]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [ У Access Token-a есть два свойства: он многоразовый и короткоживущий. Такой токен чаще всего валиден в течение 48 часов, а у кого-то 30 минут. Время выбирается на основании того, как используется сервис.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

@@ -1,0 +1,41 @@
+concept_operational_data_encryption <- sc_node_class;;
+concept_operational_system <- sc_node_class;;
+
+concept_operational_data_encryption
+<- sc_node_class;
+
+=> nrel_main_idtf: [шифрование орперационных данных]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [operational data encryption]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [шифрование операционных данных]
+		(*
+		  <- lang_ru;;
+		*);
+		[operational data encryption ]
+		(*<- lang_en;;*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Шифрование операционных данных]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Шифрование операционных данных — технология защиты информации, переводящая данные в операционной памяти в нечитаемый код.
+]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

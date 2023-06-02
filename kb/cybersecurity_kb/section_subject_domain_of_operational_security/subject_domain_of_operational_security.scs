@@ -1,0 +1,83 @@
+subject_domain_of_operational_security <- sc_node_struct;;
+
+subject_domain_of_operational_security
+=> nrel_main_idtf:
+	[Предметная область операционной безопасности]
+	(* <- lang_ru;; *);
+	[Subject domain of network security]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Предметная область, объектом исследования которой является операционная безопасность]
+	(* <- lang_ru;; *);
+
+<- subject_domain;
+
+=> nrel_private_subject_domain:
+section_subject_domain_of_controlling_personal_data_and_records;
+section_subject_domain_of_physical_security;
+
+<= nrel_section_decomposition:{
+section_subject_domain_of_physical_security;
+section_subject_domain_of_controlling_personal_data_and_records};
+
+/*<= nrel_private_subject_domain:
+subject_domain_of_cybersecurity;*/
+
+-> rrel_not_maximum_studied_object_class:
+concept_operational_data_encryption;
+concept_operational_system_threats;
+concept_operational_system;
+concept_defensive_operations;
+concept_hard_dick_encryption;
+concept_secure_ssh;
+concept_access_control_operational_system;
+concept_operational_defense_of_personal_data;
+concep_jwt_access_token;
+concept_jwt_refresh_token;
+concept_token;
+concept_iam;
+concept_cloud_watch;
+concept_disaster_recovery;
+concept_iot_security;
+concept_mqtt_protocol;
+concept_cloud_security;
+concept_secure_sdlc;
+concept_equipment_cooling;
+concept_alarm_systems;
+concept_logging;
+concept_least_privilege;
+concept_proccess;
+concept_thread;
+concept_miltuproccessing;
+concept_multithreading;
+concept_asynchrony;
+concept_operational_authentication;
+concept_operational_authorization;
+concept_operational_security_policy;
+concept_recovering_operational_data;
+concept_management_of_operational_safety;
+concept_operational_multifactorial_authentication;
+concept_operational_virtualization;
+concept_contanerization;
+concept_orchestration;
+concept_firewall;
+concept_operational_risk;
+concept_zero_day_vulnerability;
+concept_spuffing;
+concept_operational_malware;
+concept_public_key_infrastructure;
+nrel_operational_setup;
+nrel_operational_vulnerability;
+concept_two_factor_operational_authentication;
+concept_guard;
+concept_biometric_passwords;
+concept_video_surveillance_cameras;
+concept_anti_vandal_cases;
+concept_backup_power;
+
+
+
+-> rrel_explored_relation:
+nrel_operational_setup;
+
+-> rrel_maximum_studied_object_class: operational_security;;

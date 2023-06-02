@@ -1,0 +1,47 @@
+concept_cloud_watch
+<- sc_node_class;
+
+=> nrel_main_idtf: [cloud watch]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [cloud watch]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Cloud Watch]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Cloud Watch – это инструмент мониторинга, логирования облачных сервисов.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Cloud Watch]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Cloud Watch работает по умолчанию со многими ресурсами облачной инфраструктуры и позволяет эффективно отслеживать нагрузку на них. ]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

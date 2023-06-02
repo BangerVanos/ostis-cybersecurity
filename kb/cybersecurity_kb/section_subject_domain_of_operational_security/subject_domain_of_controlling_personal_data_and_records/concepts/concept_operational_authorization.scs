@@ -1,0 +1,47 @@
+concept_operational_authorization
+<- sc_node_class;
+
+=> nrel_main_idtf: [операционная авторизация]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [opeartional authorization]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Операционная авторизация]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Операционная авторизация - предоставление человеку права доступа к информационным ресурсам и системам обработки данных.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [утв. Операционная авторизация]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [ Авторизация позволяет установить директивный доступ к папкам и файлам, часы доступа, размер разрешенного места для хранения, и так далее.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

@@ -1,0 +1,42 @@
+concept_operational_system_threats <- sc_node_class;;
+
+concept_operational_system_threats
+<- sc_node_class;
+
+=> nrel_main_idtf: [угрозы операционным системам]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [operational system threats]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [угрозы операционным системам]
+		(*
+		  <- lang_ru;;
+		*);
+		[operational system threats]
+		(*<- lang_en;;*);
+
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf: [опр. Угрозы операционным системам]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Угрозы операционным систеам - потенциально опасные действия для самой операционной  системы 
+]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+		//используемые констранты
+		
+	*);;
