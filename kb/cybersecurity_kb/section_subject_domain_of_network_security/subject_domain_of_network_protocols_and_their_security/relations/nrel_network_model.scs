@@ -1,0 +1,46 @@
+nrel_network_model
+
+<- sc_node_norole_relation; 	
+=> nrel_main_idtf: 
+	[сетевая модель*]
+	(*<- lang_ru;;*);
+	[network model*]
+	(*<- lang_en;;*);
+	
+<- binary_relation;
+<- oriented_relation;
+<|- symmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Сетевая модель]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Сетевая модель - бинарное отношение, связывающее стек протоколов с сетевой моделью, которая вляется основой данного стека.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	
+..node 
+<- arity;
+-> nrel_network_model;
+=> nrel_mesuarment: 2 (* <- number;; *);;
+	
+nrel_network_model
+=> nrel_first_domain: concept_protocol_stack;
+=> nrel_seconf_domain: concept_network_model;
+=> nrel_definition_domain:
+	...
+	(*
+		<= nrel_union: {concept_protocol_stack; concept_network_model};;
+	*);;

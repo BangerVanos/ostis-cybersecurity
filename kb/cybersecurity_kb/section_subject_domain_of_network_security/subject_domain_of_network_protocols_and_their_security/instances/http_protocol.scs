@@ -1,0 +1,55 @@
+http_protocol
+<- sc_node_class;
+
+=> nrel_main_idtf: [протокол передачи гипертекста]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [hypertext transfer protocol]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [HTTP]
+        (*
+            <- lang_en;;
+        *);
+
+<- concept_application_layer_protocol;
+
+=> nrel_included_in_stack: tcp_ip_protocol_stack;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Протокол передачи гипертекста]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Протокол передачи гипертекста —  протокол прикладного уровня передачи данных, изначально — в виде гипертекстовых документов в формате HTML, в настоящее время используется для передачи произвольных данных.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Протокол передачи гипертекста]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [HTTP в настоящее время повсеместно используется во Всемирной паутине для получения информации с веб-сайтов.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

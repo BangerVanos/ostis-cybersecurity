@@ -1,0 +1,45 @@
+nrel_network_topology
+<- sc_node_norole_relation; 	
+=> nrel_main_idtf: 
+	[сетевая топология*]
+	(*<- lang_ru;;*);
+	[network topology*]
+	(*<- lang_en;;*);
+		
+<- binary_relation;
+<- oriented_relation;
+<|- symmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Сетевая топология]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Топология сети – бинарное отношение, связывающее компьютерную сеть с сетевой топологией, характерной для этой сети.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	
+..node 
+<- arity;
+-> nrel_network_topology;
+=> nrel_mesuarment: 2 (* <- number;; *);;
+	
+nrel_network_topology 
+=> nrel_first_domain: concept_computer_network;
+=> nrel_seconf_domain: concept_network_topology;
+=> nrel_definition_domain:
+	...
+	(*
+		<= nrel_union: {concept_computer_network; concept_network_topology};;
+	*);;

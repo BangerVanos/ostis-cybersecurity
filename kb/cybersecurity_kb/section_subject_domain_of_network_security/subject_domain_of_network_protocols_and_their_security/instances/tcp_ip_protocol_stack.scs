@@ -1,0 +1,59 @@
+tcp_ip_protocol_stack
+
+<- concept_protocol_stack;
+=> nrel_main_idtf: [стек протоколов TCP/IP]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [TCP/IP protocol stack]
+		(*
+		  <- lang_en;;
+		*);
+
+=> nrel_idtf: [TCP/IP]
+		(*
+		  <- lang_en;;
+		*);
+        => nrel_idtf: [стек TCP/IP]
+		(*
+		  <- lang_ru;;
+		*);
+
+=> nrel_network_model:
+	tcp_ip_network_model;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Стек протоколов TCP/IP]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [TCP/IP — сетевая модель передачи данных, представленных в цифровом виде. Модель описывает способ передачи данных от источника информации к получателю. В модели предполагается прохождение информации через четыре уровня, каждый из которых описывается правилом.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Стек протоколов TCP/IP]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Наборы правил, решающих задачу по передаче данных, составляют стек протоколов передачи данных, на которых базируется Интернет.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

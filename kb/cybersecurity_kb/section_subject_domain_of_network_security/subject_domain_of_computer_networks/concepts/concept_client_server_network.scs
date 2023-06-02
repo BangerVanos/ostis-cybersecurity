@@ -1,0 +1,24 @@
+concept_client_server_network
+<- sc_node_class;
+=> nrel_main_idtf: 
+	[сеть типа клиент-сервер]
+	(*<- lang_ru;;*);
+	[client-server network]
+	(*<- lang_en;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Cеть типа клиент-сервер]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Cеть типа клиент-сервер — вычислительная сеть с архитектурой, в которой задания или сетевая нагрузка распределены между поставщиками услуг, называемыми серверами, и заказчиками услуг, называемыми клиентами.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

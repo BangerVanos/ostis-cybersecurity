@@ -1,0 +1,55 @@
+file_transfer_protocol
+
+=> nrel_main_idtf: [протокол передачи файлов]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [file transfer protocol]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [FTP]
+        (*
+            <- lang_en;;
+        *);
+
+<- concept_application_level_protocol;
+
+=> nrel_included_in_stack: tcp_ip_protocol_stack;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Протокол передачи файлов]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Протокол управления передачей — прикладной протокол передачи файлов по сети.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Протокол передачи файлов]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Протокол построен на архитектуре «клиент-сервер» и использует разные сетевые соединения для передачи команд и данных между клиентом и сервером.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	

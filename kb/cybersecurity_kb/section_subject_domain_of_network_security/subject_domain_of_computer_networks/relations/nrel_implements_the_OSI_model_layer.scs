@@ -1,0 +1,45 @@
+nrel_implements_the_OSI_model_layer
+<- sc_node_norole_relation; 	
+=> nrel_main_idtf: 
+	[реализует уровень модели OSI*]
+	(*<- lang_ru;;*);
+	[implements the OSI model layer*]
+	(*<- lang_en;;*);
+		
+<- binary_relation;
+<- oriented_relation;
+<|- symmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. реализует уровень модели OSI]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [реализует уровень модели OSI – бинарное отношение, связывающее некоторое сетевое оборудование с уровнем модели OSI, топологией, который оно реализует.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	
+..node 
+<- arity;
+-> nrel_implements_the_OSI_model_layer;
+=> nrel_mesuarment: 2 (* <- number;; *);;
+	
+nrel_implements_the_OSI_model_layer 
+=> nrel_first_domain: concept_network_equipment;
+=> nrel_seconf_domain: concept_network_model_layer;
+=> nrel_definition_domain:
+	...
+	(*
+		<= nrel_union: {concept_network_equipment; concept_network_model_layer};;
+	*);;

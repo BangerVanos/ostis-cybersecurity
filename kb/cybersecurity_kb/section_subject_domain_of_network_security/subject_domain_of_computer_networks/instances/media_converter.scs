@@ -1,0 +1,60 @@
+media_converter
+=> nrel_main_idtf: 
+	[медиаконвертер]
+	(*<- lang_ru;;*);
+	[media converter]
+	(*<- lang_en;;*);
+
+<- concept_active_network_equipment;
+=> nrel_implements_the_OSI_model_layer: physical_layer;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Медиаконвертер]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Медиаконвертер — это устройство, преобразующее среду распространения сигнала из одного типа в другой. Чаще всего средой распространения сигнала являются медные провода и оптические кабели.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Медиаконвертер]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Традиционно, применительно к сетевым технологиям, медиаконвертеры осуществляют свою работу на 1-м уровне Модели OSI. В этом случае невозможно преобразование скорости передачи данных между двумя средами, а также невозможна другая интеллектуальная обработка данных.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Рис. Медиаконвертер](*<- lang_ru;;*);;	
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> "file://content_img/mediaconverter.jpg"		
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,46 @@
+nrel_included_in_stack
+
+<- sc_node_norole_relation; 	
+=> nrel_main_idtf: 
+	[включен в стек*]
+	(*<- lang_ru;;*);
+	[included in stack*]
+	(*<- lang_en;;*);
+	
+<- binary_relation;
+<- oriented_relation;
+<|- symmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Включен в стек]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Включен в стек - бинарное отношение, связывающее сетовой протокол с стеком протоколов, в который данный протокол включается.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	
+..node 
+<- arity;
+-> nrel_included_in_stack;
+=> nrel_mesuarment: 2 (* <- number;; *);;
+	
+nrel_included_in_stack
+=> nrel_first_domain: concept_network_protocol;
+=> nrel_seconf_domain: concept_protocol_stack;
+=> nrel_definition_domain:
+	...
+	(*
+		<= nrel_union: {concept_network_protocol; concept_protocol_stack};;
+	*);;

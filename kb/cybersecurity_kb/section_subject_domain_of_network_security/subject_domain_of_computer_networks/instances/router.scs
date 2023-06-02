@@ -1,0 +1,64 @@
+router
+=> nrel_main_idtf: 
+	[маршрутизатор]
+	(*<- lang_ru;;*);
+	[router]
+	(*<- lang_en;;*);
+
+=> nrel_idtf: 
+	[роутер]
+	(*<- lang_ru;;*);
+
+<- concept_active_network_equipment;
+=> nrel_implements_the_OSI_model_layer: network_layer;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Маршрутизатор]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Маршрутизатор — специализированное устройство, которое пересылает пакеты между различными сегментами сети на основе правил и таблиц маршрутизации.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Маршрутизатор]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Маршрутизаторы работают на «сетевом» (третьем) уровне сетевой модели OSI.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Рис. Маршрутизатор](*<- lang_ru;;*);;	
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> "file://content_img/router.jpg"		
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;

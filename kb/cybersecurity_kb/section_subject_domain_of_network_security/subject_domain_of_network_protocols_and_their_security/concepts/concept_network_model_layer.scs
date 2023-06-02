@@ -1,0 +1,45 @@
+concept_network_model_layer
+<- sc_node_class;
+
+=> nrel_main_idtf: 
+	[уровень сетевой модели]
+	(*<- lang_ru;;*);
+	[network model layer]
+	(*<- lang_en;;*);
+	
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Уровень сетевой модели]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Уровень сетевой модели –  иерархически построенная единица, которая выполняет конкретную задачу — подготовку, приём, передачу данных и последующие действия с ними. ]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Уровень сетевой модели]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Количество уровней в стеке меняется в соответствии с конкретным стеком протоколов.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

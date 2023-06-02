@@ -1,0 +1,62 @@
+star_topology
+=> nrel_main_idtf: 
+	[топология типа звезда]
+	(*<- lang_ru;;*);
+	[star topology]
+	(*<- lang_en;;*);
+=> nrel_idtf: 
+	[звезда]
+	(*<- lang_ru;;*);
+	[star]
+	(*<- lang_en;;*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Топология типа звезда]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Звезда — базовая топология компьютерной сети, в которой все компьютеры сети присоединены к центральному узлу (обычно коммутатор).]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Топология типа звезда]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [На сегодняшний день самая распространённая топология в высокоскоростной локальной вычислительной сети.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Рис. Топология типа звезда](*<- lang_ru;;*);;	
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> "file://content_img/star_topology.jpg"		
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;

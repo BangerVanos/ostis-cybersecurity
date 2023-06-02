@@ -1,0 +1,48 @@
+section_subject_domain_of_network_protocols_and_their_security <- sc_node_struct;;
+
+section_subject_domain_of_network_protocols_and_their_security
+=> nrel_main_idtf:
+	[Section. Subject domain of network protocols and their security]
+	(*<- lang_en;; *);
+	[Раздел. Предметная область сетевых протоколов и их безопасности]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Раздел ИСС по кибербезопасности, описывающий сетевые протоколы]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+-> rrel_key_sc_element:
+concept_data_link_layer_protocol;
+concept_protocol_stack;
+concept_network_model;
+concept_network_model_layer;
+concept_transport_layer_protocol;
+concept_network_layer_protocol;
+concept_application_layer_protocol;
+transmission_control_protocol;
+internet_protocol;
+http_protocol;
+physical_layer;
+data_link_layer;
+network_layer;
+transport_layer;
+session_layer;
+presentation_layer;
+application_layer;
+osi_protocol_stack;
+tcp_ip_protocol_stack;
+ethernet_standart;
+file_transfer_protocol;
+osi_network_model;
+tcp_ip_network_model;
+token_ring_protocol;
+nrel_included_layer;
+nrel_included_in_stack;
+nrel_layer_number_in_osi;
+nrel_layer_number_in_tcp_ip;
+nrel_count_of_layers_in_network_model;
+nrel_network_model;
+subject_domain_of_network_protocols_and_their_security;
+
+<- non_atomic_section;;

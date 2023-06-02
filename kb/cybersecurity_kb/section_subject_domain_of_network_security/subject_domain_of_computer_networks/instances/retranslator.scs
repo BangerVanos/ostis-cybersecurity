@@ -1,0 +1,59 @@
+retranslator
+=> nrel_main_idtf: 
+	[ретранслятор]
+	(*<- lang_ru;;*);
+	[retranslator]
+	(*<- lang_en;;*);
+
+<- concept_active_network_equipment;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Ретранслятор]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Ретранслятор — оборудование связи, которое соединяет два или более радиопередатчика, удалённых друг от друга на большие расстояния.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Ретранслятор]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Ретрансляторы, дублирующие сигнал с существенной задержкой по времени и/или повторяющие его несколько раз, называют также «попугаями».]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Рис. Ретранслятор](*<- lang_ru;;*);;	
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> "file://content_img/retranslator.jpg"		
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;

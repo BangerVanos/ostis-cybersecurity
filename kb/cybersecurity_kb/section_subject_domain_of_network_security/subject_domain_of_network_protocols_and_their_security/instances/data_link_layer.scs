@@ -1,0 +1,50 @@
+data_link_layer
+<- concept_network_model_layer;
+
+=> nrel_main_idtf: [канальный уровень]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [data link layer]
+		(*
+		  <- lang_en;;
+		*);
+
+=> nrel_layer_number_in_osi_stack: 2 (*<- number;;*);
+=> nrel_layer_number_in_tcp_ip_stack: 1 (*<- number;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Канальный уровень]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Канальный уровень - уровень стека протокола, предназначенный для передачи данных узлам, находящимся в том же сегменте локальной сети.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Канальный уровень]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Канальный уровень отвечает за доставку кадров между устройствами, подключенными к одному сетевому сегменту. Кадры канального уровня не пересекают границ сетевого сегмента. Кадры передаются последовательно с обработкой кадров подтверждения, отсылаемых обратно получателем.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	

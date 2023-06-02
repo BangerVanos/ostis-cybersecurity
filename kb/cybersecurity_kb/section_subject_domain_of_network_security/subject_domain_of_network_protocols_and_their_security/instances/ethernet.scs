@@ -1,0 +1,48 @@
+ethernet_standart
+
+=> nrel_main_idtf: 
+		[стандарт ethernet]
+		(*
+		  <- lang_ru;;
+		*);
+
+<- concept_data_link_layer_protocol;
+
+=> nrel_included_in_stack: tcp_ip_network_model;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Стандарт Ethernet]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Стандарт Ethernet - сетевой протокол, который определяет проводные соединения и электрические сигналы на физическом уровне, формат кадров и протоколы управления доступом к среде — на канальном уровне модели OSI.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Ethernet]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [В зависимости от скорости передачи данных и передающей среды существует несколько вариантов технологии. Независимо от способа передачи, стек сетевого протокола и программы работают одинаково практически во всех нижеперечисленных вариантах.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	

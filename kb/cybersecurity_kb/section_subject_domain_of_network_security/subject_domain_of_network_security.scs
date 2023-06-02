@@ -1,0 +1,23 @@
+subject_domain_of_network_security <- sc_node_struct;;
+
+subject_domain_of_network_security
+=> nrel_main_idtf:
+	[Предметная область сетевой безопасности] 
+	(* <- lang_ru;; *);
+	[Subject domain of network security]	
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Предметная область, объектом исследования которой является сетевая безопасность] 
+	(* <- lang_ru;; *);
+
+<- subject_domain;
+
+=> nrel_private_subject_domain:
+subject_domain_of_computer_networks;
+subject_domain_of_layers_of_network_security;
+subject_domain_of_network_protocols_and_their_security;
+subject_domain_of_network_security_threats;
+subject_domain_of_network_security_tools;
+
+
+-> rrel_maximum_studied_object_class: concept_network_security;;

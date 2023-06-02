@@ -1,0 +1,55 @@
+token_ring_protocol
+
+=> nrel_main_idtf: [протокол token ring]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [token ring protocol]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [token ring]
+        (*
+            <- lang_en;;
+        *);
+
+<- concept_data_link_layer_protocol;
+
+=> nrel_included_in_stack: osi_protocol_stack;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Протокол Token Ring]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Протокол Token Ring — протокол передачи данных в локальной вычислительной сети с топологией кольца и «маркерным доступом».]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Протокол Token Ring]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Станции в локальной вычислительной сети Token Ring логически организованы в кольцевую топологию, с данными, передаваемыми последовательно от одной станции в кольце к другой. Token Ring использует специальный трёхбайтовый блок данных, называемый маркером, который так же перемещается по кольцу. Владение маркером предоставляет его обладателю право передавать данные.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	

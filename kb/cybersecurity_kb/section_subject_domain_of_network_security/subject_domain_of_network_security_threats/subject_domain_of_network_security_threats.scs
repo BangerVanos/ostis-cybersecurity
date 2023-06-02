@@ -1,0 +1,23 @@
+subject_domain_of_network_security_threats
+<- sc_node_struct;
+
+=> nrel_main_idtf:
+	[Предметная область угроз сетевой безопасности] 
+	(* <- lang_ru;; *);
+	[Subject domain of network security threats]	
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[Предметная область, объектом исследования которой являются угрозы сетевой безопасности] 
+	(* <- lang_ru;; *);
+
+
+<- subject_domain;
+
+-> rrel_not_maximum_studied_object_class:
+concept_accidental_vulnerability;
+concept_objective_vulnerability;
+concept_subjective_vulnerability;
+concept_vulnerability_of_security_system;
+
+
+-> rrel_maximum_studied_object_class: concept_network_security_threat;;

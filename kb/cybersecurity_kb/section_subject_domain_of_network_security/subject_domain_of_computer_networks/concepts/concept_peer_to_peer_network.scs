@@ -1,0 +1,32 @@
+concept_peer_to_peer_network
+<- sc_node_class;
+=> nrel_main_idtf: 
+	[одноранговая сеть]
+	(*<- lang_ru;;*);
+	[peer to peer network]
+	(*<- lang_en;;*);
+
+=> nrel_idtf: 
+	[децентрализованная сеть]
+	(*<- lang_ru;;*);
+=> nrel_idtf: 
+	[пиринговая сеть]
+	(*<- lang_ru;;*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Cеть типа клиент-сервер]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Одноранговая сеть — компьютерная сеть, основанная на равноправии участников. Часто в такой сети отсутствуют выделенные серверы, а каждый узел является как клиентом, так и выполняет функции сервера.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

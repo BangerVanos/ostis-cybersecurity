@@ -1,0 +1,46 @@
+nrel_count_of_layers_in_network_model
+
+<- sc_node_norole_relation; 	
+=> nrel_main_idtf: 
+	[количество уровней в сетевой модели*]
+	(*<- lang_ru;;*);
+	[count of layers in network model*]
+	(*<- lang_en;;*);
+	
+<- binary_relation;
+<- oriented_relation;
+<|- symmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Количество уровней в сетевой модели]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Количество уровней в сетевой модели - бинарное отношение, связывающее сетевую моделт с числом, равным количеству уровней в данной сетевой модели.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	
+..node 
+<- arity;
+-> nrel_count_of_layers_in_network_model;
+=> nrel_mesuarment: 2 (* <- number;; *);;
+	
+nrel_count_of_layers_in_network_model
+=> nrel_first_domain: concept_network_model;
+=> nrel_seconf_domain: number;
+=> nrel_definition_domain:
+	...
+	(*
+		<= nrel_union: {concept_network_model; number};;
+	*);;

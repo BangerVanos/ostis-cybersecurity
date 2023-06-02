@@ -1,0 +1,65 @@
+bus_topology 
+
+=> nrel_main_idtf: 
+	[топология типа общая шина]
+	(*<- lang_ru;;*);
+	[bus topology]
+	(*<- lang_en;;*);
+=> nrel_idtf: 
+	[шина]
+	(*<- lang_ru;;*);
+	[bus]
+	(*<- lang_en;;*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Топология типа общая шина]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Топология шина - сетевая топология, в которой узлы напрямую связаны с общим полудуплексным соединением, называемым шиной.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Топология типа общая шина]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Данные в виде электрических сигналов передаются всем компьютерам сети. Однако информацию принимает только тот компьютер, адрес которого соответствует адресу получателя. Причем в каждый момент времени только один компьютер может вести передачу данных.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Рис. Топология типа общая шина](*<- lang_ru;;*);;	
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> "file://content_img/bus_topology.jpg"		
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;	
+

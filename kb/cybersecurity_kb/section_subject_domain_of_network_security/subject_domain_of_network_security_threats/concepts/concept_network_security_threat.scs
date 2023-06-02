@@ -1,0 +1,53 @@
+concept_network_security_threat
+<- sc_node_class;
+
+=> nrel_main_idtf: [угроза для сетевой безопасности]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [network security threat]
+		(*
+		  <- lang_en;;
+		*);
+
+-> concept_phishing_attack;
+-> concept_distributed_denial_of_service;
+-> concept_malware;
+-> unathorized_access;
+-> concept_social_engeneering;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Угроза для сетевой безопасности]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Угроза для сетевой безопасности — потенциально возможные события, процессы или действия, которые могут нанести ущерб сетевой безопасности.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Угроза для сетевой безопасности]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [На сегодня существует более 100 позиций и разновидностей угроз информационной системе.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

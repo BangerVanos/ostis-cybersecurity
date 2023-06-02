@@ -1,0 +1,48 @@
+concept_application_layer_protocol
+<- sc_node_class;
+<- concept_network_protocol;
+
+=> nrel_main_idtf: [протокол прикладного уровня] 
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [application level protocol]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Протокол прикладного уровня]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Протокол прикладного уровня -  сетевой протокол верхнего уровня (7-го в сетевой модели OSI и 4-го в стеке протоколов TCP/IP), обеспечивает взаимодействие сети и пользователя.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Протокол прикладного уровня]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Уровень разрешает приложениям пользователя иметь доступ к сетевым службам, таким как обработчик запросов к базам данных, доступ к файлам, пересылке электронной почты.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

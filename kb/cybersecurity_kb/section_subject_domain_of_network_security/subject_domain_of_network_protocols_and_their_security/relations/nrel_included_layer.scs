@@ -1,0 +1,46 @@
+nrel_included_layer
+
+<- sc_node_norole_relation; 	
+=> nrel_main_idtf: 
+	[включенный уровень*]
+	(*<- lang_ru;;*);
+	[included layer*]
+	(*<- lang_en;;*);
+	
+<- binary_relation;
+<- oriented_relation;
+<|- symmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Включенный уровень]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Включенный уровень - бинарное отношение, связывающее сетевую модель с иерархической единицой данной модели(уровнем этой модели).]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	
+..node 
+<- arity;
+-> nrel_included_layer;
+=> nrel_mesuarment: 2 (* <- number;; *);;
+	
+nrel_included_layer
+=> nrel_first_domain: concept_network_model;
+=> nrel_seconf_domain: concept_network_model_layer;
+=> nrel_definition_domain:
+	...
+	(*
+		<= nrel_union: {concept_network_model; concept_network_model_layer};;
+	*);;

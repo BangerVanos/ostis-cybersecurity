@@ -1,0 +1,50 @@
+concept_network_topology 
+<- sc_node_class;	
+=> nrel_main_idtf: 
+	[сетевая топология]
+	(*<- lang_ru;;*);
+	[network topology]
+	(*<- lang_en;;*);
+
+-> bus_topology;
+-> ring_topology;
+-> star_topology;
+-> mesh_topology;
+-> tree_topology;
+-> hybrid_topology;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Сетевая топология]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Топология сети – геометрическая форма и физическое расположение компьютеров по отношению к друг другу.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Сетевая топология]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Выбор топологии основывается на множестве факторов, в число которых входят цена, расстояния, вопросы безопасности, предполагаемая сетевая операционная система, а также будет ли новая сеть использовать существующее оборудование, проводку и т. п.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

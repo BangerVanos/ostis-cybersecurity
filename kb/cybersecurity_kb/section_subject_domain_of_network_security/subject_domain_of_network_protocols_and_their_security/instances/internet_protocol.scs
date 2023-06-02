@@ -1,0 +1,61 @@
+internet_protocol
+
+=> nrel_main_idtf: 
+        [интенет-протокол]
+		(*
+		  <- lang_ru;;
+		*);
+		[internet protocol]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: 
+        [межсетевой протокол]
+		(*
+		  <- lang_ru;;
+		*);
+		[IP]
+		(*
+		  <- lang_en;;
+		*);
+
+<- concept_network_layer_protocol;
+
+=> nrel_included_in_stack: tcp_ip_protocol_stack;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Интернет-протокол]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Интернет-протокол - это протокол, с помощью которого данные отправляются с одного компьютера на другой через сеть Интернет.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Интернет-протокол]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [IP объединяет сегменты сети в единую сеть, обеспечивая доставку пакетов данных между любыми узлами сети через произвольное число промежуточных узлов (маршрутизаторов).]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	

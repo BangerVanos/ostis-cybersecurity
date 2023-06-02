@@ -1,0 +1,60 @@
+osi_protocol_stack
+
+<- concept_protocol_stack;
+=> nrel_main_idtf: [стек протоколов OSI]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [OSI protocol stack]
+		(*
+		  <- lang_en;;
+		*);
+
+=> nrel_idtf: [OSI]
+		(*
+		  <- lang_en;;
+		*);
+        => nrel_idtf: [стек OSI]
+		(*
+		  <- lang_ru;;
+		*);
+
+=> nrel_network_model:
+	osi_network_model;
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Стек протоколов OSI]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [стек OSI представляет собой набор спецификаций конкретных протоколов.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Стек протоколов OSI]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [В отличие от других стеков протоколов, стек OSI полностью соответствует модели OSI, включая спецификации протоколов для всех семи уровней взаимодействия, определённых в этой модели.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

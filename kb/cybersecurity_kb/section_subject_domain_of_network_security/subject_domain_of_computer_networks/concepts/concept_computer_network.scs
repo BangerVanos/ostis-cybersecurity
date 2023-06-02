@@ -1,0 +1,98 @@
+sc_statement <- sc_node_class;;
+sc_explanation <- sc_node_class;;
+..node <- sc_node_class;;
+concept_peer_to_peer_network <- sc_node_class;;
+
+concept_computer_network 
+<- sc_node_class;
+=> nrel_main_idtf: 
+	[компьютерная сеть]
+	(*<- lang_ru;;*);
+	[computer network]
+	(*<- lang_en;;*);
+=> nrel_idtf: 
+	[вычислительная сеть]
+	(*<- lang_ru;;*);
+	[информационно-вычислительная сеть]
+	(*<- lang_ru;;*);
+	[information-computing network]
+	(*<- lang_en;;*);
+
+<= nrel_subdividing:
+{
+	concept_body_area_network;
+	concept_personal_area_network;
+	concept_local_area_network;
+	concept_campus_area_network;
+	concept_metropolitan_area_network;
+	concept_wide_area_network
+};
+<= nrel_subdividing:
+{
+	concept_client_server_network;
+	concept_peer_to_peer_network
+};
+
+<= nrel_subdividing:
+{
+	concept_wired_computer_network;
+	concept_wireless_computer_network
+};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Компьютерная сеть]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Компьютерная сеть — система, обеспечивающая обмен данными между вычислительными устройствами — компьютерами, серверами, маршрутизаторами и другим оборудованием или программным обеспечением.
+]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Компьютерная сеть]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Основное назначение компьютерных сетей - обеспечить совместный доступ пользователей к информации (базам данных, документам и т.д.) и ресурсам (жесткие диски, принтеры, накопители CD-ROM, модемы, выход в глобальную сеть и т.д.).
+]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Компьютерная сеть]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Важной характеристикой любой компьютерной сети является широта территории, которую она охватывает. Широта охвата определятся взаимной удаленностью компьютеров, составляющих сеть и, следовательно, влияет на технологические решения, выбираемые при построении сети.
+]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	

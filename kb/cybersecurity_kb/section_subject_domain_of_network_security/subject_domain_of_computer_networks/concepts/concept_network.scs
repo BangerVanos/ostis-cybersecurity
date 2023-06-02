@@ -1,0 +1,43 @@
+concept_network
+<- sc_node_class;
+=> nrel_main_idtf: 
+	[сеть]
+	(*<- lang_ru;;*);
+	[network]
+	(*<- lang_en;;*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Сеть]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Сеть — совокупность систем связи и систем обработки информации, которая может использоваться несколькими пользователями.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Проводная вычислительная сеть]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Проводная сеть является ограниченной по длине и количеству подключаемых устройств, а именно напрямую по проводу могут подключиться только два устройства.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

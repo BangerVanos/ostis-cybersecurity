@@ -1,0 +1,35 @@
+concept_applied_science_discipline <- sc_node_class;;
+
+concept_network_security
+<- sc_node_class;
+=> nrel_main_idtf: [сетевая безопасность]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [network_security]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [безопасность компьютерных сетей]
+		(*
+		  <- lang_ru;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- explanation;;
+		=> nrel_main_idtf: [опр. Сетевая безопасность]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Сетевая безопасность — прикладная научная дисциплина, отрасль информатики, которая занимается вопросами обеспечения информационной безопасности компьютерной сети и её ресурсов, в частности, хранящихся в ней и передающихся по ней данных и работающих с ней пользователей.
+]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

@@ -1,0 +1,55 @@
+transmission_control_protocol
+
+=> nrel_main_idtf: [протокол управления передачей]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [transmission control protocol]
+		(*
+		  <- lang_en;;
+		*);
+=> nrel_idtf: [TCP]
+        (*
+            <- lang_en;;
+        *);
+
+<- concept_transport_layerl_protocol;
+
+=> nrel_included_in_stack: tcp_ip_protocol_stack;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Протокол управления передачей]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Протокол управления передачей — один из основных протоколов передачи данных интернета. Предназначен для управления передачей данных интернета.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Протокол управления передачей]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Механизм TCP предоставляет поток данных с предварительной установкой соединения, осуществляет повторный запрос данных в случае потери данных и устраняет дублирование при получении двух копий одного пакета, гарантируя тем самым целостность передаваемых данных и уведомление отправителя о результатах передачи.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	

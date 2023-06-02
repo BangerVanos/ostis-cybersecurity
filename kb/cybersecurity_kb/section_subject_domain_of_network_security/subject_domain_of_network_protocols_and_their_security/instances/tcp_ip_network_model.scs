@@ -1,0 +1,37 @@
+tcp_ip_network_model
+=> nrel_main_idtf: [сетевая модель TCP//IP]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [TCP//IP network model]
+		(*
+		  <- lang_en;;
+		*);
+
+<- concept_network_model;
+
+=> nrel_included_layer:
+    data_link_layer;
+    network_layer;
+    transport_layer;
+    application_layer;
+
+=> nrel_count_of_layers_in_network_model: 4 (* <- number;; *);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. сетевая модель TCP//IP]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [сетевая модель TCP//IP - сетевая модель передачи данных, представленных в цифровом виде. Модель описывает способ передачи данных от источника информации к получателю.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

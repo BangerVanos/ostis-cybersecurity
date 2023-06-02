@@ -1,0 +1,47 @@
+nrel_layer_number_in_tcp_ip
+
+<- sc_node_norole_relation; 	
+
+=> nrel_main_idtf: 
+	[номер уровня в стеке TCP\\IP*]
+	(*<- lang_ru;;*);
+	[layer number in TCP\\IP stack*]
+	(*<- lang_en;;*);
+	
+<- binary_relation;
+<- oriented_relation;
+<|- symmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Номер уровня в модели TCP\\IP]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Номер уровня в модели TCP\\IP - бинарное отношение, связывающее уровень стека протоколов с числом, которое является номером данного уровня в иерархии стека протоколов TCP\\IP.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	
+..node 
+<- arity;
+-> nrel_layer_number_in_tcp_ip;
+=> nrel_mesuarment: 2 (* <- number;; *);;
+	
+nrel_layer_number_in_tcp_ip
+=> nrel_first_domain: concept_network_model_layer;
+=> nrel_seconf_domain: number;
+=> nrel_definition_domain:
+	...
+	(*
+		<= nrel_union: {number; concept_network_model_layer};;
+	*);;

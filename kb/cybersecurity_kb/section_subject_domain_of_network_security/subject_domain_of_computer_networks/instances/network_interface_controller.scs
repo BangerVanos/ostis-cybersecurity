@@ -1,0 +1,67 @@
+network_interface_controller
+=> nrel_main_idtf: 
+	[сетевой адаптер]
+	(*<- lang_ru;;*);
+	[network interface controller]
+	(*<- lang_en;;*);
+
+=> nrel_idtf: 
+	[сетевая плата]
+	(*<- lang_ru;;*);
+	[NIC]
+	(*<- lang_en;;*);
+
+<- concept_active_network_equipment;
+
+=> nrel_implements_the_OSI_model_layer: data_link_layer;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Сетевой адаптер]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Сетевой адаптер — устройство, используемое для обеспечения сетевых подключений.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Сетевой адаптер]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [В модели систем OSI сетевая карта отвечает за функционирование второго, канального уровня. В связке с драйвером он также обеспечивает работу физического оборудования.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Рис. Сетевой адаптер](*<- lang_ru;;*);;	
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> "file://content_img/nic.png"		
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;

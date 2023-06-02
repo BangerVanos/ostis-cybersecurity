@@ -1,0 +1,59 @@
+osi_network_model
+=> nrel_main_idtf: [сетевая модель OSI]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [OSI network model]
+		(*
+		  <- lang_en;;
+		*);
+
+<- concept_network_model;
+
+=> nrel_count_of_layers_in_network_model: 7 (* <- number;; *);
+
+=> nrel_included_layer:
+    physical_layer;
+    data_link_layer;
+    network_layer;
+    transport_layer;
+    session_layer;
+    presentation_layer;
+    application_layer;
+
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Cетевая модель OSI]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Cетевая модель OSI - сетевая модель стека сетевых протоколов OSI.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Cетевая модель OSI]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Модель определяет различные уровни взаимодействия систем. Каждый уровень выполняет определённые функции при таком взаимодействии.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

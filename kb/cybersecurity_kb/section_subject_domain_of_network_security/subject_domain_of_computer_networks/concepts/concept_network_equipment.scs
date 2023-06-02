@@ -1,0 +1,50 @@
+concept_network_equipment
+<- sc_node_class;
+=> nrel_main_idtf: 
+	[сетевое оборудование]
+	(*<- lang_ru;;*);
+	[network equipment]
+	(*<- lang_en;;*);
+
+<= nrel_subdividing:
+{
+    concept_active_network_equipment;
+    concept_passive_network_equipment;
+    concept_peripheral_network_equipment
+};
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Сетевое оборудование]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Сетевое оборудование — устройство, необходимые для работы компьютерной сети.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Сетевое оборудование]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Сетевое оборудование локальных вычислительных сетей включает в себя различные элементы, которые выполняют четко отведенные им функции.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

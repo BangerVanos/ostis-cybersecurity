@@ -1,0 +1,49 @@
+network_layer
+<- concept_network_model_layer;
+
+=> nrel_main_idtf: [сетевой уровень]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [network layer]
+		(*
+		  <- lang_en;;
+		*);
+
+=> nrel_layer_number_in_osi_stack: 3 (*<- number;;*);
+=> nrel_layer_number_in_tcp_ip_stack: 2 (*<- number;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Сетевой уровень]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Сетевой уровень - уровень стека протоколов, предназначенный для определения пути передачи данных. Отвечает за трансляцию логических адресов и имён в физические, определение кратчайших маршрутов, маршрутизацию, отслеживание неполадок и заторов в сети.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Сетевой уровень]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Протоколы сетевого уровня маршрутизируют данные от источника к получателю и могут быть разделены на два класса: протоколы с установкой соединения и без него.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

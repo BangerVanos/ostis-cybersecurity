@@ -1,0 +1,43 @@
+section_subject_domain_of_computer_networks 
+<- sc_node_struct;
+=> nrel_main_idtf:
+	[Section. Subject domain of computer networks]
+	(*<- lang_en;; *);
+	[Раздел. Предметная область компьютерных сетей]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Раздел ИСС по кибербезопасности, описывающий компьютерные сети]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+-> rrel_key_sc_element:
+concept_computer_network;
+concept_body_area_network;
+concept_personal_area_network;
+concept_local_area_network;
+concept_campus_area_network;
+concept_metropolitan_area_network;
+concept_wide_area_network;
+concept_client_server_network;
+concept_peer_to_peer_network;
+concept_wired_computer_network;
+concept_wireless_computer_network;
+concept_network_topology;
+nrel_network_topology;
+nrel_implements_the_OSI_model_layer;
+bus_topology;
+ring_topology;
+star_topology;
+mesh_topology;
+tree_topology;
+hybrid_topology;
+commutation_panel;
+media_converter;
+network_interface_controller;
+network_switch;
+retranslator;
+router;
+subject_domain_of_computer_networks;
+
+<- non_atomic_section;;

@@ -1,0 +1,28 @@
+section_subject_domain_of_network_security <- sc_node_struct;;
+
+section_subject_domain_of_network_security
+=> nrel_main_idtf:
+	[Section. Subject domain of network security]
+	(*<- lang_en;; *);
+	[Раздел. Предметная область сетевой безопасности]
+	(* <- lang_ru;; *);
+=> nrel_idtf:
+	[Раздел ИСС по кибербезопасности, описывающий сетевую безопасность]
+	(* <- lang_ru;; *);
+
+<- not_enough_formed_structure;
+
+<= nrel_section_decomposition:
+{
+section_subject_domain_of_computer_networks;
+section_subject_domain_of_layers_of_network_security;
+section_subject_domain_of_network_protocols_and_their_security;
+section_subject_domain_of_network_security_threats;
+section_subject_domain_of_network_security_tools
+};
+
+-> rrel_key_sc_element:
+concept_network_security;
+subject_domain_of_network_security;
+
+<- non_atomic_section;;

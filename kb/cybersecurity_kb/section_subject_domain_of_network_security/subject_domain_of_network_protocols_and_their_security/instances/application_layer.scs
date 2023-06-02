@@ -1,0 +1,54 @@
+application_layer
+<- concept_network_model_layer;
+
+=> nrel_main_idtf: [прикладной уровень]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [application layer]
+		(*
+		  <- lang_en;;
+		*);
+
+=> nrel_idtf: [уровень приложения]
+		(*
+		  <- lang_ru;;
+		*);
+
+=> nrel_layer_number_in_osi_stack: 7 (*<- number;;*);
+=> nrel_layer_number_in_tcp_ip_stack: 4 (*<- number;;*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Прикладной уровень]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Прикладной уровень - уровень стека протоколов, который является интерфейсом между приложением (участником информационного обмена, источником данных) и средой передачи.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Прикладной уровень]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Типичными функциями прикладного уровня являются идентификация участников информационного обмена, определение занятости приложений и ресурсов сети.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

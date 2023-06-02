@@ -1,0 +1,59 @@
+commutation_panel
+=> nrel_main_idtf: 
+	[коммутационная панель]
+	(*<- lang_ru;;*);
+	[commutation panel]
+	(*<- lang_en;;*);
+
+<- concept_passive_network_equipment;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Коммутационная панель]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Коммутационная панель — одна из составных частей структурированной кабельной системы (СКС). Представляет собой панель с множеством соединительных разъёмов, расположенных на лицевой стороне панели]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Коммутационная панель]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [На тыльной стороне панели находятся контакты, предназначенные для фиксированного соединения с кабелями, и соединённые с разъёмами электрически. Коммутационная панель относится к пассивному сетевому оборудованию.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Рис. Коммутационная панель](*<- lang_ru;;*);;	
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> "file://content_img/panel.jpg"		
+			(*
+			=> nrel_format: format_jpg;;
+			*);;
+		*);;
+	*);;
