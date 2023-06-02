@@ -1,0 +1,67 @@
+concept_intrusion_detecting_system
+<- sc_node_class;
+
+=> nrel_main_idtf: [система обнаружения вторжений]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [intrusion detecting system]
+		(*
+		  <- lang_en;;
+		*);
+
+		=> nrel_idtf: [IDS]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Система обнаружения вторжений]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Система обнаружения вторжений — программное или аппаратное средство, предназначенное для выявления фактов неавторизованного доступа в компьютерную систему или сеть либо несанкционированного управления ими в основном через Интернет.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Система обнаружения вторжений]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Системы обнаружения вторжений используются для обнаружения некоторых типов вредоносной активности, которая может нарушить безопасность компьютерной системы.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+    
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Рис. cхема IDS](*<- lang_ru;;*);;	
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> "file://content_img/ids.png"		
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;

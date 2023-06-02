@@ -9,4 +9,10 @@ subject_domain_of_network_security_tools
 	[Предметная область, объектом исследования которой являются средства сетевой безопасности] 
 	(* <- lang_ru;; *);
 
-<- subject_domain;;
+<- subject_domain;
+
+-> rrel_not_maximum_studied_object_class: 
+concept_intrusion_detecting_system;
+concept_intrusion_prevation_system;
+
+-> rrel_maximum_studied_object_class: concept_network_security_tool;;

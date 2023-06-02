@@ -1,0 +1,56 @@
+botnet
+
+=> nrel_main_idtf: [ботнет]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [botnet]
+		(*
+		  <- lang_en;;
+		*);
+
+<- concept_ip_spoofing;
+<- concept_computer_network;
+
+=> nrel_cause_of_the_attack:
+lack_of_safety_awareness;
+passwords_weaknesses;
+cryptography_vulnerability;
+security_misconfiguration;
+
+network_protocols_vulnerability;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Ботнет]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Ботнет - компьютерная сеть, состоящая из некоторого количества хостов с запущенными ботами — автономным программным обеспечением.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Ботнет]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Чаще всего бот в составе ботнета является программой, скрытно устанавливаемой на устройство жертвы и позволяющей злоумышленнику выполнять некие действия с использованием ресурсов заражённого компьютера. Обычно используются для нелегальной или неодобряемой деятельности — рассылки спама, перебора паролей на удалённой системе, атак на отказ в обслуживании.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

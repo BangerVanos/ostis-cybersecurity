@@ -1,0 +1,50 @@
+concept_network_attack
+<- sc_node_class;
+
+
+=> nrel_main_idtf: [сетевая атака]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [network attack]
+		(*
+		  <- lang_en;;
+		*);
+
+-> concept_computer_virus;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Сетевая атака]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Сетевая атака — информационное разрушающее воздействие на распределённую вычислительную систему (компьютерную сеть), осуществляемое программно по каналам связи.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Сетевая атака]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [За атаку может быть ответственна как группа злоумышленников, так и отдельное лицо. При помощи специальных инструментов хакер присваивает себе административные права, тем самым получая контроль над системой.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
