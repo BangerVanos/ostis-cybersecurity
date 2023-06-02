@@ -1,0 +1,67 @@
+concept_intrusion_prevation_system
+<- sc_node_class;
+
+=> nrel_main_idtf: [система предотвращения вторжений]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [intrusion prevation system]
+		(*
+		  <- lang_en;;
+		*);
+
+		=> nrel_idtf: [IPS]
+		(*
+		  <- lang_en;;
+		*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Система предотвращения вторжений]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Система предотвращения вторжений — программная или аппаратная система сетевой и компьютерной безопасности, обнаруживающая вторжения или нарушения безопасности и автоматически защищающая от них.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Система предотвращения вторжений]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Системы IPS можно рассматривать как расширение Систем обнаружения вторжений (IDS), так как задача отслеживания атак остается одинаковой. Однако, они отличаются в том, что IPS должна отслеживать активность в реальном времени и быстро реализовывать действия по предотвращению атак.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+    
+<- rrel_key_sc_element:
+	...
+	(*
+		=> nrel_main_idtf:
+			[Рис. cхема IPS](*<- lang_ru;;*);;	
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> "file://content_img/ips.png"		
+			(*
+			=> nrel_format: format_png;;
+			*);;
+		*);;
+	*);;

@@ -1,0 +1,46 @@
+nrel_cause_of_the_attack
+
+<- sc_node_norole_relation; 	
+=> nrel_main_idtf: 
+	[причина атаки*]
+	(*<- lang_ru;;*);
+	[cause of the attack*]
+	(*<- lang_en;;*);
+	
+<- binary_relation;
+<- oriented_relation;
+<|- symmetric_relation;
+<|- reflexive_relation;
+<|- transitive_relation;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Причина атаки]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Причина атаки - бинарное отношение, связывающее сетевую атаку с некоторой уязвимостью, которая послужила причиной атаки.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
+	
+..node 
+<- arity;
+-> nrel_cause_of_the_attack;
+=> nrel_mesuarment: 2 (* <- number;; *);;
+	
+nrel_cause_of_the_attack
+=> nrel_first_domain: concept_network_attack;
+=> nrel_seconf_domain: concept_vulnerability_of_security_system;
+=> nrel_definition_domain:
+	...
+	(*
+		<= nrel_union: {concept_network_attack; concept_vulnerability_of_security_system};;
+	*);;

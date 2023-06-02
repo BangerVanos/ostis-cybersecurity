@@ -15,6 +15,7 @@ concept_network_security_threat
 -> concept_malware;
 -> unathorized_access;
 -> concept_social_engeneering;
+-> concept_network_attack;
 
 <- rrel_key_sc_element:
 	...

@@ -18,6 +18,10 @@ concept_accidental_vulnerability;
 concept_objective_vulnerability;
 concept_subjective_vulnerability;
 concept_vulnerability_of_security_system;
+concept_network_attack;
+concept_ip_spoofing;
 
+-> rrel_explored_relation:
+nrel_cause_of_the_attack;
 
 -> rrel_maximum_studied_object_class: concept_network_security_threat;;

@@ -1,0 +1,51 @@
+brute_force_attack
+
+=> nrel_cause_of_the_attack:
+passwords_weaknesses;
+
+=> nrel_main_idtf: [атака методом подбора]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [brute force attack]
+		(*
+		  <- lang_en;;
+		*);
+
+<- concept_network_attack;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. Атака методом подбора]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Атака методом подбора - это сетевая атака, в которой используются методы проб и ошибок, чтобы угадать учетные данные для входа, ключи безопасности или другую конфиденциальную информацию.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. Атака методом подбора]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Атаки методом подбора на удивление эффективны, особенно с учетом того, что около 65% людей повторно используют пароли.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;

@@ -1,0 +1,50 @@
+concept_ip_spoofing
+<- sc_node_class;
+
+=> nrel_main_idtf: [ip спуфинг]
+		(*
+		  <- lang_ru;;
+		*);
+		=> nrel_main_idtf: [ip spoofing]
+		(*
+		  <- lang_en;;
+		*);
+
+<- concept_network_attack;
+-> concept_distributed_denial_of_service;
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_explanation;;
+		=> nrel_main_idtf: [опр. IP спуфинг]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [IP спуфинг - это сетевая атака, в которой пользователь или программа стремиться выдать себя за законный IP адресс источника]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);
+	
+<- rrel_key_sc_element:
+	...
+	(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [утв. IP спуфинг]
+	  			(*
+	    				<- lang_ru;;
+	  			*);;
+		<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [При IP-спуфинге хакер рассылает поддельные IP-пакеты через поддельные IP-адреса, созданные для маскировки своей настоящей личности. Для этого они используют различные инструменты для поиска IP-адресов веб-сайтов и сетей. Затем они рассылают поддельные запросы с этими адресами.]
+				(*
+				<- lang_ru;;
+				*);;
+		*);;
+	*);;
